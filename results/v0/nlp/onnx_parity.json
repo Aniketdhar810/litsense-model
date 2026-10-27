@@ -1,0 +1,39 @@
+{
+  "texts": 200,
+  "fp32": {
+    "min_cos": 1.0,
+    "mean_cos": 1.0
+  },
+  "int8": {
+    "min_cos": 0.951715,
+    "mean_cos": 0.989382
+  },
+  "fp32_ok": true,
+  "int8_ok": false,
+  "thresholds": {
+    "fp32_min_cos": 0.9999,
+    "int8_mean_cos": 0.99,
+    "int8_min_cos": 0.98
+  },
+  "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+  "max_seq_length": 256,
+  "export": {
+    "inputs": [
+      "input_ids",
+      "attention_mask",
+      "token_type_ids"
+    ],
+    "opset": 17,
+    "torch": "2.11.0+cpu"
+  },
+  "latency_ms_one_thread": {
+    "fp32": 6.63,
+    "int8": 3.82
+  },
+  "max_latency_ms": 50.0,
+  "bytes": {
+    "minilm.onnx": 90374998,
+    "minilm.int8.onnx": 22968036,
+    "tokenizer.json": 711649
+  }
+}

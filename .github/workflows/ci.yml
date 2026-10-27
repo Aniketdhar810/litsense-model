@@ -1,0 +1,44 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read  # the job only reads the repo; it never pushes
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12", "3.13"]  # 3.11: backend/serving image; 3.13: Colab (2026-10)
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+          cache-dependency-path: requirements-*.txt
+      - name: Install core + service + test dependencies
+        run: make install-ci  # requirements-core, requirements-service, CI subset of ml, CPU torch
+      - name: Lint (ruff)
+        run: make lint
+      - name: Tests (not slow)
+        run: make test
+
+  service-image:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - name: Build the model service image
+        run: docker build -f service/Dockerfile -t litsense-service .
+      - name: Smoke test (lightgbm finds libgomp, the app imports, no key means no start)
+        run: |
+          docker run --rm litsense-service python -c "import lightgbm, service.app; print('ok')"
+          if docker run --rm litsense-service; then echo "started without SERVICE_API_KEY"; exit 1; fi

@@ -1,0 +1,9 @@
+# The service image (service/Dockerfile) needs only the core package, the service and the pins.
+*
+!litsense_core/
+!service/
+!requirements-core.txt
+!requirements-service.txt
+**/__pycache__
+**/*.pyc
+service/.env

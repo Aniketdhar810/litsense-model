@@ -1,0 +1,416 @@
+﻿audit_kind,audit_id,verdict,reason,token_set,token_sort,canonical_id,parent_asin,title,author,year,edition_kind,category,n_interactions,merge_rule
+merged_work,G001,,2 editions,100,100,am_8466318704,8466318704,La fiesta del chivo (Spanish Edition),Mario Vargas Llosa,2001,print,Literature & Fiction,10,title
+merged_work,G001,,2 editions,100,100,am_8466318704,9681906993,La fiesta del chivo (Spanish Edition),Mario Vargas Llosa,2000,print,Literature & Fiction,7,title
+merged_work,G002,,4 editions,100,100,am_0345420748,0345443284,While I Was Gone (Oprah's Book Club),Sue Miller,2000,print,Literature & Fiction,148,title
+merged_work,G002,,4 editions,100,100,am_0345420748,0345420748,While I Was Gone,Sue Miller,2002,print,Literature & Fiction,10,title
+merged_work,G002,,4 editions,100,100,am_0345420748,0375401121,While I Was Gone,Sue Miller,1999,print,Literature & Fiction,9,title
+merged_work,G002,,4 editions,100,100,am_0345420748,037541178X,While I Was Gone,Sue Miller,1999,print,Literature & Fiction,9,title
+merged_work,G003,,2 editions,100,100,am_1416556745,1416556753,Red Knife: A Novel (Cork O'Connor Mystery Series),William Kent Krueger,2009,print,Literature & Fiction,30,title
+merged_work,G003,,2 editions,100,100,am_1416556745,1416556745,Red Knife: A Cork O'Connor Mystery,William Kent Krueger,2008,print,"Mystery, Thriller & Suspense",13,title
+merged_work,G004,,2 editions,100,100,am_1596980559,1596980559,10 Books That Screwed Up the World: And 5 Others That Didn't Help,Benjamin Wiker,2008,print,Literature & Fiction,56,title
+merged_work,G004,,2 editions,100,100,am_1596980559,B001PTG3E2,10 Books That Screwed Up the World: And 5 Others That Didn't Help,Benjamin Wiker,2008,print,Literature & Fiction,5,title
+merged_work,G005,,2 editions,100,100,am_0312874448,0312874448,In the Country of the Blind,Michael Flynn,2001,print,Science Fiction & Fantasy,8,title
+merged_work,G005,,2 editions,100,100,am_0312874448,076534498X,In the Country of the Blind,Michael Flynn,2003,print,Science Fiction & Fantasy,6,title
+merged_work,G006,,3 editions,100,100,am_0307387240,0375425233,The Inspector and Silence: An Inspector Van Veeteren Mystery,Håkan Nesser,2011,print,"Mystery, Thriller & Suspense",30,title
+merged_work,G006,,3 editions,100,100,am_0307387240,B004J4WK4M,The Inspector and Silence: An Inspector Van Veeteren Mystery (5) (Inspector Van Veeteren Mysteries),Håkan Nesser,2011,kindle,"Mystery, Thriller & Suspense",12,title
+merged_work,G006,,3 editions,100,100,am_0307387240,0307387240,The Inspector and Silence: An Inspector Van Veeteren Mystery (5) (Inspector Van Veeteren Series),Håkan Nesser,2012,print,"Mystery, Thriller & Suspense",8,title
+merged_work,G007,,2 editions,100,100,am_1500425257,B00M6F2ONI,Night with a SEAL (Hot SEALs),Cat Johnson,2014,kindle,Literature & Fiction,71,page_source
+merged_work,G007,,2 editions,100,100,am_1500425257,1500425257,Night with a SEAL (Hot SEALs),Cat Johnson,2014,print,Literature & Fiction,20,page_source
+merged_work,G008,,3 editions,100,100,am_0994630611,B06XJ14MXH,The House Next Door: A Ghost Story,Darcy Coates,2017,kindle,Literature & Fiction,232,title
+merged_work,G008,,3 editions,100,100,am_0994630611,1728220165,The House Next Door,Darcy Coates,2020,print,Literature & Fiction,8,title
+merged_work,G008,,3 editions,100,100,am_0994630611,0994630611,The House Next Door: A Ghost Story,Darcy Coates,2017,print,Literature & Fiction,5,title
+merged_work,G009,,2 editions,100,100,am_0373218850,0373285809,The MacKade Brothers: Devin and Shane,Nora Roberts,2009,print,Literature & Fiction,27,title
+merged_work,G009,,2 editions,100,100,am_0373218850,0373218850,The MacKade Brothers: Devin and Shane,Nora Roberts,2004,print,Romance,13,title
+merged_work,G010,,7 editions,100,100,am_0553576801,B000FC29HK,The Perfect Husband: An FBI Profiler Novel,Lisa Gardner,2004,kindle,"Mystery, Thriller & Suspense",208,page_source
+merged_work,G010,,7 editions,100,100,am_0553576801,0553576801,The Perfect Husband: An FBI Profiler Novel,Lisa Gardner,1997,print,"Mystery, Thriller & Suspense",47,title
+merged_work,G010,,7 editions,100,100,am_0553576801,0593159020,The Perfect Husband: A Novel (FBI Profiler),Lisa Gardner,2020,print,"Mystery, Thriller & Suspense",10,page_source
+merged_work,G010,,7 editions,100,100,am_0553576801,B07L9VNGWY,"The Perfect Husband: FBI Profiler, Book 1",Lisa Gardner,,audio,"Mystery, Thriller & Suspense",9,title
+merged_work,G010,,7 editions,100,100,am_0553576801,0553593498,The Perfect Husband: An FBI Profiler Novel,Lisa Gardner,2012,print,"Mystery, Thriller & Suspense",8,title
+merged_work,G010,,7 editions,100,100,am_0553576801,0553587692,The Perfect Husband,Lisa Gardner,2004,print,"Mystery, Thriller & Suspense",6,title
+merged_work,G010,,7 editions,100,100,am_0553576801,1568656017,The Perfect Husband,Lisa Gardner,1998,print,"Mystery, Thriller & Suspense",5,title
+merged_work,G011,,2 editions,100,100,am_0441014186,0441014186,"Dauntless (The Lost Fleet, Book 1)",Jack Campbell,2006,print,Science Fiction & Fantasy,146,title
+merged_work,G011,,2 editions,100,100,am_0441014186,0857681303,"Dauntless (Lost Fleet, Book 1)",Jack Campbell,2011,print,Science Fiction & Fantasy,5,title
+merged_work,G012,,3 editions,100,100,am_0345455681,0449002632,London: The Novel,Edward Rutherfurd,1998,print,Literature & Fiction,51,title
+merged_work,G012,,3 editions,100,100,am_0345455681,0345455681,London: The Novel,Edward Rutherfurd,2002,print,Literature & Fiction,43,title
+merged_work,G012,,3 editions,100,100,am_0345455681,0517591812,London: The Novel,Edward Rutherfurd,1997,print,Literature & Fiction,27,title
+merged_work,G013,,2 editions,100,100,am_034553087X,034553087X,Darker After Midnight: A Midnight Breed Novel,Lara Adrian,2012,print,Science Fiction & Fantasy,38,title
+merged_work,G013,,2 editions,100,100,am_034553087X,0440246121,Darker After Midnight (with bonus novella A Taste of Midnight): A Midnight Breed Novel,Lara Adrian,2012,print,Science Fiction & Fantasy,10,title
+merged_work,G014,,3 editions,100,100,am_0451202503,0451202503,The Songcatcher,Sharyn McCrumb,2002,print,"Mystery, Thriller & Suspense",17,title
+merged_work,G014,,3 editions,100,100,am_0451202503,0525944885,The Songcatcher: A Novel,Sharyn McCrumb,2001,print,Literature & Fiction,12,title
+merged_work,G014,,3 editions,100,100,am_0451202503,B00VGFYQB2,The Songcatcher: A Ballad Novel,Sharyn McCrumb,2015,kindle,Literature & Fiction,6,title
+merged_work,G015,,4 editions,100,100,am_0451233964,B005GSYXYK,Stay Close,Harlan Coben,2012,kindle,"Mystery, Thriller & Suspense",257,title
+merged_work,G015,,4 editions,100,100,am_0451233964,0525952276,Stay Close,Harlan Coben,2012,print,"Mystery, Thriller & Suspense",88,title
+merged_work,G015,,4 editions,100,100,am_0451233964,0451233964,Stay Close,Harlan Coben,2013,print,"Mystery, Thriller & Suspense",77,title
+merged_work,G015,,4 editions,100,100,am_0451233964,B007GDK69Y,Stay Close: NOW A MAJOR NETFLIX SHOW,Harlan Coben,2012,kindle,"Mystery, Thriller & Suspense",9,title
+merged_work,G016,,3 editions,100,100,am_0062279971,B00DB3ABAW,The Wind Is Not a River: A Novel,Brian Payton,2014,kindle,Literature & Fiction,122,title
+merged_work,G016,,3 editions,100,100,am_0062279971,0062279971,The Wind Is Not a River,Brian Payton,2014,print,Literature & Fiction,46,title
+merged_work,G016,,3 editions,100,100,am_0062279971,006227998X,The Wind Is Not a River: A Novel,Brian Payton,2014,print,Literature & Fiction,14,title
+merged_work,G017,,4 editions,100,100,am_0743299841,074329985X,Day After Night: A Novel,Anita Diamant,2010,print,Literature & Fiction,42,title
+merged_work,G017,,4 editions,100,100,am_0743299841,B002NT3B70,Day After Night: A Novel,Anita Diamant,2009,kindle,Literature & Fiction,39,title
+merged_work,G017,,4 editions,100,100,am_0743299841,0743299841,Day After Night: A Novel,Anita Diamant,2009,print,Literature & Fiction,38,title
+merged_work,G017,,4 editions,100,100,am_0743299841,B003IWYFZI,Day After Night: A Novel,Anita Diamant,2009,print,Literature & Fiction,7,title
+merged_work,G018,,2 editions,100,100,am_0399157042,0399157042,The Jungle (The Oregon Files),Clive Cussler,2011,print,Literature & Fiction,54,title
+merged_work,G018,,2 editions,100,100,am_0399157042,042524654X,The Jungle (The Oregon Files),Clive Cussler,2012,print,Literature & Fiction,45,title
+merged_work,G019,,3 editions,100,100,am_0739423231,0849945135,Blessed Child,Ted Dekker,2001,print,"Mystery, Thriller & Suspense",23,title
+merged_work,G019,,3 editions,100,100,am_0739423231,0849943124,Blessed Child,Ted Dekker,2001,print,Religion & Spirituality,8,title
+merged_work,G019,,3 editions,100,100,am_0739423231,0739423231,Blessed Child,Ted Dekker,2001,print,"Mystery, Thriller & Suspense",5,title
+merged_work,G020,,4 editions,100,100,am_161620818X,B07WK5T9ZD,The Mountains Sing,Nguyễn Phan Quế Mai,2020,kindle,Literature & Fiction,122,title
+merged_work,G020,,4 editions,100,100,am_161620818X,161620818X,The Mountains Sing,Nguyễn Phan Quế Mai,2020,print,Literature & Fiction,36,title
+merged_work,G020,,4 editions,100,100,am_161620818X,1643751352,The Mountains Sing,Nguyễn Phan Quế Mai,2021,print,Literature & Fiction,13,title
+merged_work,G020,,4 editions,100,100,am_161620818X,B083QSB52R,The Mountains Sing,Nguyễn Phan Quế Mai,,audio,Literature & Fiction,10,title
+merged_work,G021,,2 editions,100,100,am_0307477479,0307477479,A Visit from the Goon Squad,Jennifer Egan,2011,print,Literature & Fiction,323,title
+merged_work,G021,,2 editions,100,100,am_0307477479,0307592839,A Visit from the Goon Squad,Jennifer Egan,2010,print,Literature & Fiction,83,title
+merged_work,G022,,2 editions,100,100,am_0451239172,0451239172,Temple of a Thousand Faces,John Shors,2013,print,Literature & Fiction,31,title
+merged_work,G022,,2 editions,100,100,am_0451239172,B0090UOGC4,Temple of a Thousand Faces,John Shors,2013,kindle,Literature & Fiction,23,title
+merged_work,G023,,3 editions,100,100,am_0061159182,0061999342,"Grievous Sin: A Decker/Lazarus Novel (Decker/Lazarus Novels, 6)",Faye Kellerman,2011,print,"Mystery, Thriller & Suspense",11,subtitle
+merged_work,G023,,3 editions,100,51,am_0061159182,0061159182,"Grievous Sin (Decker/Lazarus Novels, 6)",Faye Kellerman,2007,print,"Mystery, Thriller & Suspense",8,title
+merged_work,G023,,3 editions,100,51,am_0061159182,0449003302,Grievous Sin,Faye Kellerman,1998,print,"Mystery, Thriller & Suspense",5,title
+merged_work,G024,,4 editions,100,100,am_0307948110,0307957934,The Fear Index,Robert Harris,2012,print,"Mystery, Thriller & Suspense",55,title
+merged_work,G024,,4 editions,100,100,am_0307948110,B005EM8O8O,The Fear Index,Robert Harris,2012,kindle,"Mystery, Thriller & Suspense",49,title
+merged_work,G024,,4 editions,100,100,am_0307948110,0307948110,The Fear Index,Robert Harris,2012,print,"Mystery, Thriller & Suspense",22,title
+merged_work,G024,,4 editions,100,100,am_0307948110,B005EWDAFQ,The Fear Index: From the Sunday Times bestselling author,Robert Harris,2011,kindle,"Mystery, Thriller & Suspense",13,title
+merged_work,G025,,7 editions,100,100,am_0307877183,B004DEPELY,The Paris Wife: A Novel,Paula McLain,2011,kindle,Literature & Fiction,572,title
+merged_work,G025,,7 editions,100,100,am_0307877183,0345521307,The Paris Wife: A Novel,Paula McLain,2011,print,Literature & Fiction,305,title
+merged_work,G025,,7 editions,100,100,am_0307877183,0345521315,The Paris Wife,Paula McLain,2012,print,Literature & Fiction,265,title
+merged_work,G025,,7 editions,100,100,am_0307877183,0345545176,The Paris Wife,Paula McLain,2011,unknown,Literature & Fiction,18,title
+merged_work,G025,,7 editions,100,100,am_0307877183,B004JHY89O,The Paris Wife,Paula McLain,2011,kindle,Literature & Fiction,14,title
+merged_work,G025,,7 editions,100,100,am_0307877183,0307877183,The Paris Wife: A Novel,Paula McLain,2011,unknown,Literature & Fiction,6,title
+merged_work,G025,,7 editions,100,100,am_0307877183,B004OWZ6QI,The Paris Wife: A Novel,Paula McLain,,audio,Literature & Fiction,5,title
+merged_work,G026,,3 editions,100,100,am_0060187263,0061767964,The Antelope Wife: A Novel,Louise Erdrich,2012,print,Literature & Fiction,9,title
+merged_work,G026,,3 editions,100,100,am_0060187263,B000FCK50I,The Antelope Wife: A Novel,Louise Erdrich,2009,kindle,Literature & Fiction,6,title
+merged_work,G026,,3 editions,100,100,am_0060187263,0060187263,The Antelope Wife: A Novel,Louise Erdrich,1998,print,Literature & Fiction,5,title
+merged_work,G027,,2 editions,100,100,am_0765303744,0765303744,"Death Comes As Epiphany: A Catherine LeVendeur Mystery (Catherine LeVendeur, 1)",Sharan Newman,2002,print,Literature & Fiction,5,title
+merged_work,G027,,2 editions,100,100,am_0765303744,B007XV1UE4,Death Comes As Epiphany: A Catherine LeVendeur Mystery,Sharan Newman,2002,kindle,Literature & Fiction,5,title
+merged_work,G028,,2 editions,100,100,am_0812989406,0812989406,Anything Is Possible: A Novel,Elizabeth Strout,2017,print,Literature & Fiction,124,title
+merged_work,G028,,2 editions,100,100,am_0812989406,0812989414,Anything Is Possible: A Novel,Elizabeth Strout,2018,print,Literature & Fiction,55,title
+merged_work,G029,,2 editions,100,100,am_0062064657,0062064657,"The Lost (Celestial Blues, Book 2) (Celestial Blues Trilogy, 2)",Vicki Pettersson,2013,print,"Mystery, Thriller & Suspense",24,page_source
+merged_work,G029,,2 editions,100,100,am_0062064657,B0089LON0K,The Lost: Celestial Blues Book Two (Celestial Blues Series 2),Vicki Pettersson,2013,kindle,"Mystery, Thriller & Suspense",11,page_source
+merged_work,G030,,2 editions,100,100,am_0578675374,B089ZZLN91,The Last Word: A Novel Of The War In The Pacific,Ron Miner,2020,kindle,Literature & Fiction,14,title
+merged_work,G030,,2 editions,100,100,am_0578675374,0578675374,The Last Word: A Novel Of The War In The Pacific,Ron Miner,2020,print,Literature & Fiction,10,title
+merged_work,G031,,2 editions,100,100,am_0061728276,0061728276,The White Devil: A Novel,Justin Evans,2011,print,Literature & Fiction,37,title
+merged_work,G031,,2 editions,100,100,am_0061728276,B004MMEINM,The White Devil: A Novel,Justin Evans,2011,kindle,Literature & Fiction,30,title
+merged_work,G032,,2 editions,100,100,am_0671009826,0671795937,Rogue Warrior,John Weisman,1993,print,Literature & Fiction,40,title
+merged_work,G032,,2 editions,100,100,am_0671009826,0671009826,Rogue Warrior,John Weisman,1997,print,Politics & Social Sciences,6,title
+merged_work,G033,,6 editions,100,100,am_0007196962,B000T0G2DA,Velocity: A Novel,Dean Koontz,2007,kindle,"Mystery, Thriller & Suspense",140,page_source
+merged_work,G033,,6 editions,100,100,am_0007196962,0553588257,VELOCITY,Dean Koontz,2006,print,Literature & Fiction,65,title
+merged_work,G033,,6 editions,100,100,am_0007196962,0553804154,Velocity,Dean Koontz,2005,print,"Mystery, Thriller & Suspense",64,title
+merged_work,G033,,6 editions,100,100,am_0007196962,0345533461,Velocity: A Novel,Dean Koontz,2012,print,"Mystery, Thriller & Suspense",13,page_source
+merged_work,G033,,6 editions,100,100,am_0007196962,0007196962,Velocity,Dean Koontz,2005,print,<none>,9,title
+merged_work,G033,,6 editions,100,100,am_0007196962,B000BLNPI2,Velocity,Dean Koontz,2005,print,"Mystery, Thriller & Suspense",9,title
+merged_work,G034,,3 editions,100,100,am_0316058572,0316058572,Deception: A Novel,Denise Mina,2005,print,"Mystery, Thriller & Suspense",22,title
+merged_work,G034,,3 editions,100,100,am_0316058572,0316735922,Deception: A Novel,Denise Mina,2004,print,"Mystery, Thriller & Suspense",15,title
+merged_work,G034,,3 editions,100,100,am_0316058572,B00EXTQR8I,Deception: A Novel,Denise Mina,2007,kindle,"Mystery, Thriller & Suspense",7,title
+merged_work,G035,,2 editions,100,100,am_147679555X,B00P42WU0C,The Truth and Other Lies: A Novel,Sascha Arango,2015,kindle,Literature & Fiction,50,title
+merged_work,G035,,2 editions,100,100,am_147679555X,147679555X,The Truth and Other Lies: A Novel,Sascha Arango,2015,print,"Mystery, Thriller & Suspense",38,title
+merged_work,G036,,2 editions,100,100,am_0062700782,1619492393,Emily Post's Etiquette,Emily Post,2012,print,Literature & Fiction,5,title
+merged_work,G036,,2 editions,100,100,am_0062700782,0062700782,Emily Post's Etiquette (16th Edition),Emily Post,1997,print,Reference,5,title
+merged_work,G037,,2 editions,100,100,am_0399184236,0399184236,Blind Sight (A Mallory Novel),Carol O'Connell,2016,print,"Mystery, Thriller & Suspense",26,title
+merged_work,G037,,2 editions,100,100,am_0399184236,0399184244,Blind Sight (A Mallory Novel),Carol O'Connell,2017,print,"Mystery, Thriller & Suspense",5,title
+merged_work,G038,,2 editions,100,100,am_0425266176,0425266176,Death at the Door (Death on Demand Bookstore),Carolyn Hart,2014,print,"Mystery, Thriller & Suspense",14,title
+merged_work,G038,,2 editions,100,100,am_0425266176,0425266184,Death at the Door (A Death on Demand Mysteries),Carolyn Hart,2015,print,"Mystery, Thriller & Suspense",8,title
+merged_work,G039,,2 editions,100,100,am_1416565159,1416565159,"I, Sniper: A Bob Lee Swagger Novel",Stephen Hunter,2009,print,Literature & Fiction,83,title
+merged_work,G039,,2 editions,100,100,am_1416565159,1416565175,"I, Sniper (Bob Lee Swagger Novels)",Stephen Hunter,2010,print,Literature & Fiction,33,title
+merged_work,G040,,2 editions,100,100,am_146371100X,B0058U7X4I,Ferris' Bluff,Fred Limberg,2011,kindle,"Mystery, Thriller & Suspense",62,title
+merged_work,G040,,2 editions,100,100,am_146371100X,146371100X,Ferris' Bluff,Fred Limberg,2011,print,"Mystery, Thriller & Suspense",6,title
+merged_work,G041,,3 editions,100,100,am_0544973976,0544973976,The Fifth To Die (A 4MK Thriller),J.D. Barker,2018,print,"Mystery, Thriller & Suspense",35,title
+merged_work,G041,,3 editions,100,100,am_0544973976,1328589811,The Fifth to Die (A 4MK Thriller),J.D. Barker,2019,print,"Mystery, Thriller & Suspense",7,title
+merged_work,G041,,3 editions,100,100,am_0544973976,B07BGG34FR,The Fifth to Die,J. D. Barker,,audio,"Mystery, Thriller & Suspense",5,title
+merged_work,G042,,3 editions,100,100,am_0345404777,B000Q9EONE,No Safe Place (Kerry Kilcannon Book 1),Richard North Patterson,2003,kindle,"Mystery, Thriller & Suspense",21,title
+merged_work,G042,,3 editions,100,100,am_0345404777,0345404777,No Safe Place (Kerry Kilcannon),Richard North Patterson,1999,print,"Mystery, Thriller & Suspense",12,title
+merged_work,G042,,3 editions,100,100,am_0345404777,0679450424,No Safe Place,Richard North Patterson,1998,print,Literature & Fiction,11,title
+merged_work,G043,,2 editions,100,100,am_0670025879,0670025879,The Temporary Gentleman,Sebastian Barry,2014,print,Literature & Fiction,16,title
+merged_work,G043,,2 editions,100,100,am_0670025879,B00G3L0ZVO,The Temporary Gentleman,Sebastian Barry,2014,kindle,Literature & Fiction,9,title
+merged_work,G044,,2 editions,100,100,am_0985626860,B00EUK19I8,Love Gone Mad,Mark Rubinstein,2013,kindle,"Mystery, Thriller & Suspense",150,title
+merged_work,G044,,2 editions,100,100,am_0985626860,0985626860,Love Gone Mad,Mark Rubinstein,2013,print,"Mystery, Thriller & Suspense",30,title
+merged_work,G045,,3 editions,100,100,am_0385539991,B00OWWKFWA,The Blumhouse Book of Nightmares: The Haunted City (Blumhouse Books),Jason Blum,2015,kindle,Literature & Fiction,11,title
+merged_work,G045,,3 editions,100,100,am_0385539991,1101873914,The Blumhouse Book of Nightmares: The Haunted City (Blumhouse Books),Jason Blum,2015,print,Literature & Fiction,8,title
+merged_work,G045,,3 editions,100,100,am_0385539991,0385539991,The Blumhouse Book of Nightmares: The Haunted City,Jason Blum,2015,print,Literature & Fiction,6,title
+merged_work,G046,,2 editions,100,100,am_0312373120,0312373120,"""K"" is for Killer: A Kinsey Millhone Novel (Kinsey Millhone Alphabet Mysteries, 11)",Sue Grafton,2009,print,"Mystery, Thriller & Suspense",19,title
+merged_work,G046,,2 editions,100,100,am_0312373120,0449221504,K Is for Killer,Sue Grafton,1995,print,"Mystery, Thriller & Suspense",7,title
+merged_work,G047,,5 editions,100,100,am_0486456560,0486456560,Grimm's Fairy Tales (Dover Thrift Editions: SciFi/Fantasy),Brothers Grimm,2007,print,Literature & Fiction,14,title
+merged_work,G047,,5 editions,100,100,am_0486456560,1480270253,Grimm's Fairy Tales,Brothers Grimm,2012,print,Literature & Fiction,8,title
+merged_work,G047,,5 editions,100,100,am_0486456560,1593080565,Grimm's Fairy Tales (Barnes & Noble Classics),Brothers Grimm,2003,print,Literature & Fiction,7,title
+merged_work,G047,,5 editions,100,100,am_0486456560,1606600109,Grimm's Fairy Tales (Calla Editions),Brothers Grimm,2010,print,Literature & Fiction,6,title
+merged_work,G047,,5 editions,100,100,am_0486456560,1494462338,Grimm's Fairy Tales,Brothers Grimm,2013,print,Literature & Fiction,5,title
+merged_work,G048,,3 editions,100,100,am_0671034057,0671034057,Now You See Her,Linda Howard,1999,print,Literature & Fiction,32,title
+merged_work,G048,,3 editions,100,100,am_0671034057,0743482891,Now You See Her,Linda Howard,2003,print,Literature & Fiction,6,title
+merged_work,G048,,3 editions,100,100,am_0671034057,0671568825,Now You See Her,Linda Howard,1998,print,"Mystery, Thriller & Suspense",6,title
+merged_work,G049,,2 editions,100,100,am_1400044553,1400044553,House of Meetings,Martin Amis,2007,print,Literature & Fiction,12,title
+merged_work,G049,,2 editions,100,100,am_1400044553,1400096014,House of Meetings (Vintage International),Martin Amis,2008,print,Literature & Fiction,6,title
+merged_work,G050,,2 editions,100,100,am_1416590544,1416590544,The Book of Unholy Mischief: A Novel,Elle Newmark,2008,print,"Mystery, Thriller & Suspense",38,title
+merged_work,G050,,2 editions,100,100,am_1416590544,1416590579,The Book of Unholy Mischief: A Novel,Elle Newmark,2009,print,Literature & Fiction,8,title
+merged_work,G051,,5 editions,100,100,am_0143104888,0345331389,A Princess of Mars,Edgar Rice Burroughs,1985,print,Literature & Fiction,38,title
+merged_work,G051,,5 editions,100,100,am_0143104888,1466493283,A Princess of Mars,Edgar Rice Burroughs,2011,print,Literature & Fiction,16,title
+merged_work,G051,,5 editions,100,100,am_0143104888,0143104888,A Princess of Mars (Penguin Classics),Edgar Rice Burroughs,2007,print,LGBTQ+ Books,12,title
+merged_work,G051,,5 editions,100,100,am_0143104888,1435134486,A Princess of Mars,Edgar Rice Burroughs,2011,print,Science Fiction & Fantasy,12,title
+merged_work,G051,,5 editions,100,100,am_0143104888,048644368X,A Princess of Mars,Edgar Rice Burroughs,2005,print,Literature & Fiction,7,title
+merged_work,G052,,2 editions,100,100,am_1501191454,1501191454,The Forgotten Kingdom: A Novel (2) (The Lost Queen),Signe Pike,2020,print,Literature & Fiction,13,title
+merged_work,G052,,2 editions,100,100,am_1501191454,1501191462,"The Forgotten Kingdom: A Novel (Lost Queen, The)",Signe Pike,2021,print,Literature & Fiction,9,title
+merged_work,G053,,2 editions,100,100,am_1451606974,1451606974,Lifetime: A Novel (The Annika Bengtzon Series),Liza Marklund,2013,print,"Mystery, Thriller & Suspense",6,title
+merged_work,G053,,2 editions,100,100,am_1451606974,1451607008,"Lifetime: A Novel (Annika Bengtzon Series, The)",Liza Marklund,2013,print,Literature & Fiction,5,title
+merged_work,G054,,2 editions,100,100,am_0345533798,0812993144,Tapestry of Fortunes: A Novel,Elizabeth Berg,2013,print,Literature & Fiction,75,title
+merged_work,G054,,2 editions,100,100,am_0345533798,0345533798,Tapestry of Fortunes: A Novel,Elizabeth Berg,2014,print,Literature & Fiction,20,title
+merged_work,G055,,3 editions,100,100,am_1503934713,B016ZNRC0Q,The Butterfly Garden (The Collector Book 1),Dot Hutchison,2016,kindle,"Mystery, Thriller & Suspense",4428,title
+merged_work,G055,,3 editions,100,100,am_1503934713,1503934713,"The Butterfly Garden (The Collector, 1)",Dot Hutchison,2016,print,"Mystery, Thriller & Suspense",205,title
+merged_work,G055,,3 editions,100,100,am_1503934713,B01EM6Q6L4,"The Butterfly Garden: The Collector, Book 1",Dot Hutchison,,audio,"Mystery, Thriller & Suspense",9,title
+merged_work,G056,,2 editions,100,100,am_0451490800,0451490800,The Kiss Quotient,Helen Hoang,2018,print,Literature & Fiction,164,title
+merged_work,G056,,2 editions,100,100,am_0451490800,B07D3BSXYL,The Kiss Quotient: A Novel,Helen Hoang,,audio,Literature & Fiction,23,title
+merged_work,G057,,3 editions,100,100,am_1250117542,B07S8K7J4Q,A Reasonable Doubt: A Robin Lockwood Novel,Phillip Margolin,2020,kindle,"Mystery, Thriller & Suspense",38,title
+merged_work,G057,,3 editions,100,100,am_1250117542,1250117542,"A Reasonable Doubt: A Robin Lockwood Novel (Robin Lockwood, 3)",Phillip Margolin,2020,print,"Mystery, Thriller & Suspense",11,title
+merged_work,G057,,3 editions,100,100,am_1250117542,1250118883,"A Reasonable Doubt: A Robin Lockwood Novel (Robin Lockwood, 3)",Phillip Margolin,2020,print,"Mystery, Thriller & Suspense",6,title
+merged_work,G058,,2 editions,100,100,am_0615345077,0982800290,PORTAL: Portal Chronicles Book One,Imogen Rose,2012,print,Science Fiction & Fantasy,10,title
+merged_work,G058,,2 editions,100,100,am_0615345077,0615345077,Portal,Imogen Rose,2012,print,Teen & Young Adult,6,title
+merged_work,G059,,2 editions,100,100,am_0393345858,0393345858,Bride of New France: A Novel,Suzanne Desrochers,2013,print,Literature & Fiction,8,title
+merged_work,G059,,2 editions,100,100,am_0393345858,B007HXFSAK,Bride of New France: A Novel,Suzanne Desrochers,2012,kindle,Literature & Fiction,5,title
+merged_work,G060,,2 editions,100,100,am_0345312007,B00AG8FZ9C,The Tree of Hands,Ruth Rendell,2010,kindle,"Mystery, Thriller & Suspense",38,page_source
+merged_work,G060,,2 editions,100,100,am_0345312007,0345312007,The Tree of Hands: A Novel,Ruth Rendell,1986,print,"Mystery, Thriller & Suspense",8,page_source
+merged_work,G061,,2 editions,100,100,am_0316020753,0316020753,Tabloid City: A Novel,Pete Hamill,2011,print,Literature & Fiction,28,title
+merged_work,G061,,2 editions,100,100,am_0316020753,0316020761,Tabloid City: A Novel,Pete Hamill,2012,print,"Mystery, Thriller & Suspense",5,title
+merged_work,G062,,3 editions,100,100,am_042528591X,042528591X,Iron Gold (Red Rising Series),Pierce Brown,2018,print,Literature & Fiction,51,title
+merged_work,G062,,3 editions,100,100,am_042528591X,B074NGJ6NK,Iron Gold,Pierce Brown,,audio,Literature & Fiction,12,title
+merged_work,G062,,3 editions,100,100,am_042528591X,0425285936,Iron Gold (Red Rising Series),Pierce Brown,2018,print,Literature & Fiction,6,title
+merged_work,G063,,2 editions,100,100,am_0345501578,0345501578,Hot Pursuit: A Novel,Suzanne Brockmann,2009,print,Literature & Fiction,14,title
+merged_work,G063,,2 editions,100,100,am_0345501578,0345501586,Hot Pursuit,Suzanne Brockmann,2011,print,Literature & Fiction,7,title
+merged_work,G064,,2 editions,100,100,am_0307379205,0307379205,How to Live Safely in a Science Fictional Universe: A Novel,Charles Yu,2010,print,Literature & Fiction,56,title
+merged_work,G064,,2 editions,100,100,am_0307379205,0307739457,How to Live Safely in a Science Fictional Universe: A Novel,Charles Yu,2011,print,Literature & Fiction,38,title
+merged_work,G065,,2 editions,100,100,am_0804138788,0804138788,Prayers for the Stolen,Jennifer Clement,2014,print,Literature & Fiction,25,title
+merged_work,G065,,2 editions,100,100,am_0804138788,080413880X,Prayers for the Stolen,Jennifer Clement,2014,print,Literature & Fiction,20,title
+merged_work,G066,,2 editions,100,100,am_0595441165,0595441165,Hollywood Car Wash,Lori Culwell,2007,print,Literature & Fiction,9,title
+merged_work,G066,,2 editions,100,100,am_0595441165,1416587780,Hollywood Car Wash: A Novel,Lori Culwell,2009,print,Literature & Fiction,6,title
+merged_work,G067,,3 editions,100,100,am_0062852310,0451407520,Texas Destiny,Lorraine Heath,1997,print,Romance,17,title
+merged_work,G067,,3 editions,100,100,am_0062852310,1568654650,Texas Destiny,Lorraine Heath,1997,print,Romance,9,title
+merged_work,G067,,3 editions,100,100,am_0062852310,0062852310,Texas Destiny,Lorraine Heath,2018,print,Literature & Fiction,5,title
+merged_work,G068,,2 editions,100,100,am_1250041546,1250041546,"Mimi Malloy, At Last!: A Novel",Julia MacDonnell,2014,print,Literature & Fiction,15,title
+merged_work,G068,,2 editions,100,100,am_1250041546,B00FIL9BYW,"Mimi Malloy, At Last!: A Novel",Julia MacDonnell,2014,kindle,Literature & Fiction,9,title
+merged_work,G069,,2 editions,100,100,am_0553585657,0553803018,The Emancipator's Wife: A Novel of Mary Todd Lincoln,Barbara Hambly,2005,print,Literature & Fiction,7,title
+merged_work,G069,,2 editions,100,100,am_0553585657,0553585657,The Emancipator's Wife: A Novel of Mary Todd Lincoln,Barbara Hambly,2008,print,Literature & Fiction,7,title
+merged_work,G070,,3 editions,100,100,am_0373772513,0373772904,Manhunting,Jennifer Crusie,2007,print,Literature & Fiction,16,title
+merged_work,G070,,3 editions,100,100,am_0373772513,1551666189,Manhunting (Mira),Jennifer Crusie,2000,print,Literature & Fiction,15,title
+merged_work,G070,,3 editions,100,100,am_0373772513,0373772513,Manhunting,Jennifer Crusie,2007,print,Literature & Fiction,5,title
+merged_work,G071,,2 editions,100,100,am_0758277075,0758277075,Candy Corn Murder (A Lucy Stone Mystery),Leslie Meier,2015,print,"Mystery, Thriller & Suspense",43,title
+merged_work,G071,,2 editions,100,100,am_0758277075,0758277083,Candy Corn Murder (A Lucy Stone Mystery),Leslie Meier,2016,print,"Mystery, Thriller & Suspense",6,title
+merged_work,G072,,3 editions,100,100,am_1595541551,159554156X,House,Frank Peretti,2007,print,"Mystery, Thriller & Suspense",45,title
+merged_work,G072,,3 editions,100,100,am_1595541551,1595541551,House,Frank Peretti,2006,print,"Mystery, Thriller & Suspense",42,title
+merged_work,G072,,3 editions,100,100,am_1595541551,B0013L4DRG,House,Frank Peretti,2007,print,Christian Books & Bibles,8,title
+merged_work,G073,,2 editions,100,100,am_0984042393,0984042393,Project Nemesis (a Kaiju Thriller),Jeremy Robinson,2012,print,Literature & Fiction,32,title
+merged_work,G073,,2 editions,100,100,am_0984042393,0988672510,Project Nemesis (A Kaiju Thriller) (Nemesis Saga),Jeremy Robinson,2012,print,Literature & Fiction,13,title
+merged_work,G074,,2 editions,100,100,am_0151006903,0156029065,Baudolino,Umberto Eco,2003,print,Literature & Fiction,43,title
+merged_work,G074,,2 editions,100,100,am_0151006903,0151006903,Baudolino,Umberto Eco,2002,print,Literature & Fiction,31,title
+merged_work,G075,,3 editions,100,100,am_0741444569,B004S4ZCMU,Monster Hunter International,Larry Correia,,audio,Science Fiction & Fantasy,10,title
+merged_work,G075,,3 editions,100,100,am_0741444569,0741444569,Monster Hunter International,Larry Correia,2007,print,Science Fiction & Fantasy,7,title
+merged_work,G075,,3 editions,100,100,am_0741444569,1491582731,Monster Hunter International,Larry Correia,2014,audio,Literature & Fiction,5,title
+merged_work,G076,,2 editions,100,100,am_0743272528,0743272528,Earthly Joys: A Novel (Tradescant Novels),Philippa Gregory,2005,print,Literature & Fiction,40,page_source
+merged_work,G076,,2 editions,100,100,am_0743272528,B000FCK6RA,Earthly Joys: A Novel (Tradescant Novels Book 1),Philippa Gregory,2005,kindle,Literature & Fiction,8,page_source
+merged_work,G077,,2 editions,100,100,am_0062663844,0062663844,November Road: A Novel,Lou Berney,2018,print,Literature & Fiction,44,title
+merged_work,G077,,2 editions,100,100,am_0062663844,0062663852,November Road: A Thriller,Lou Berney,2019,print,Literature & Fiction,15,title
+merged_work,G078,,4 editions,100,100,am_0141439866,B0039GL1XM,Shirley,Charlotte Bronte,2010,kindle,Literature & Fiction,27,title
+merged_work,G078,,4 editions,100,100,am_0141439866,1853260649,Shirley (Wordsworth Classics),Charlotte Bronte,1998,print,Literature & Fiction,12,title
+merged_work,G078,,4 editions,100,100,am_0141439866,0141439866,Shirley (Penguin Classics),Charlotte Bronte,2006,print,Literature & Fiction,10,title
+merged_work,G078,,4 editions,100,100,am_0141439866,0192833782,Shirley (Oxford World's Classics),Charlotte Bronte,1998,print,Literature & Fiction,8,title
+merged_work,G079,,2 editions,100,100,am_1737474905,B09GCR2C6Y,John Brown's Women: A Novel,Susan Higginbotham,2021,kindle,Literature & Fiction,15,title
+merged_work,G079,,2 editions,100,100,am_1737474905,1737474905,John Brown's Women: A Novel,Susan Higginbotham,2021,print,Literature & Fiction,5,title
+merged_work,G080,,3 editions,100,100,am_0765398516,B07C75GZGR,Redemption Point: A Crimson Lake Novel,Candice Fox,2019,kindle,"Mystery, Thriller & Suspense",31,title
+merged_work,G080,,3 editions,100,100,am_0765398516,0765398516,"Redemption Point: A Crimson Lake Novel (Crimson Lake, 2)",Candice Fox,2019,print,"Mystery, Thriller & Suspense",29,title
+merged_work,G080,,3 editions,100,100,am_0765398516,1784758086,Redemption Point,Candice Fox,,print,"Mystery, Thriller & Suspense",5,title
+merged_work,G081,,2 editions,100,100,am_0062038028,0062038028,"Slingshot: A Will Cochrane Novel (Spycatcher, 3)",Matthew Dunn,2013,print,"Mystery, Thriller & Suspense",19,title
+merged_work,G081,,2 editions,100,100,am_0062038028,0062038052,"Slingshot: A Spycatcher Novel (Spycatcher Novels, 3)",Matthew Dunn,2014,print,"Mystery, Thriller & Suspense",5,title
+merged_work,G082,,2 editions,100,100,am_0140434011,1619491818,Kidnapped,John Grant,2011,print,Literature & Fiction,9,title
+merged_work,G082,,2 editions,100,100,am_0140434011,0140434011,Kidnapped (Penguin Classics),John Grant,1994,print,Literature & Fiction,7,title
+merged_work,G083,,2 editions,100,100,am_1101990732,1101990732,Brimstone,Cherie Priest,2017,print,Literature & Fiction,11,title
+merged_work,G083,,2 editions,100,100,am_1101990732,B01FEY5DRQ,Brimstone,Cherie Priest,2017,kindle,Literature & Fiction,8,title
+merged_work,G084,,2 editions,100,100,am_1696300053,1696300053,The Virgin Gift (The Gift),Lauren Blakely,2019,print,Literature & Fiction,14,title
+merged_work,G084,,2 editions,100,100,am_1696300053,B081S6V46Q,The Virgin Gift,Lauren Blakely,,audio,Literature & Fiction,6,title
+merged_work,G085,,2 editions,100,100,am_1250788242,1250788242,Real Easy: A Novel,Marie Rutkoski,2022,print,"Mystery, Thriller & Suspense",41,title
+merged_work,G085,,2 editions,100,100,am_1250788242,B094DQ32N7,Real Easy: A Novel,Marie Rutkoski,,audio,"Mystery, Thriller & Suspense",6,title
+merged_work,G086,,2 editions,100,100,am_0399165703,0399165703,The American Mission,Matthew Palmer,2014,print,"Mystery, Thriller & Suspense",29,title
+merged_work,G086,,2 editions,100,100,am_0399165703,B00G3L14Y6,The American Mission,Matthew Palmer,2014,kindle,"Mystery, Thriller & Suspense",12,title
+merged_work,G087,,2 editions,100,100,am_1501101781,1501101781,The Maze (8) (A John Corey Novel),Nelson DeMille,2022,print,"Mystery, Thriller & Suspense",64,title
+merged_work,G087,,2 editions,100,100,am_1501101781,B08MWRLVZM,The Maze,Nelson DeMille,,audio,"Mystery, Thriller & Suspense",22,title
+merged_work,G088,,2 editions,100,100,am_0316881716,0316966207,Walkin' the Dog,Walter Mosley,1999,print,Literature & Fiction,9,title
+merged_work,G088,,2 editions,100,100,am_0316881716,0316881716,Walkin' the Dog,Walter Mosley,2000,print,Literature & Fiction,7,title
+merged_work,G089,,3 editions,100,100,am_0061962163,B003V1WVZM,Russian Winter: A Novel,Daphne Kalotay,,kindle,"Mystery, Thriller & Suspense",138,title
+merged_work,G089,,3 editions,100,100,am_0061962163,0061962163,Russian Winter: A Novel,Daphne Kalotay,2010,print,Literature & Fiction,41,title
+merged_work,G089,,3 editions,100,100,am_0061962163,0061962171,Russian Winter: A Novel,Daphne Kalotay,2011,print,"Mystery, Thriller & Suspense",34,title
+merged_work,G090,,2 editions,100,100,am_0345549074,0345549074,Ruin Falls: A Novel,Jenny Milchman,2014,print,Literature & Fiction,40,title
+merged_work,G090,,2 editions,100,100,am_0345549074,0345549090,Ruin Falls: A Novel,Jenny Milchman,2015,print,Literature & Fiction,5,title
+merged_work,G091,,3 editions,100,100,am_0060898658,006118943X,The Zero: A Novel (P.S.),Jess Walter,2007,print,"Mystery, Thriller & Suspense",25,title
+merged_work,G091,,3 editions,100,100,am_0060898658,B000UOJTZ8,The Zero: A Novel (P.S.),Jess Walter,2009,kindle,"Mystery, Thriller & Suspense",11,title
+merged_work,G091,,3 editions,100,100,am_0060898658,0060898658,The Zero: A Novel,Jess Walter,2006,print,"Mystery, Thriller & Suspense",6,title
+merged_work,G092,,2 editions,100,100,am_0143126946,0670785687,The Reckoning,Rennie George Airth,2014,print,"Mystery, Thriller & Suspense",18,title
+merged_work,G092,,2 editions,100,100,am_0143126946,0143126946,The Reckoning: A John Madden Mystery,Rennie George Airth,2015,print,"Mystery, Thriller & Suspense",11,title
+merged_work,G093,,2 editions,100,100,am_076531276X,0765351390,"Harbingers: A Repairman Jack Novel (Repairman Jack, 10)",F. Paul Wilson,2007,print,Literature & Fiction,17,title
+merged_work,G093,,2 editions,100,100,am_076531276X,076531276X,Harbingers: A Repairman Jack Novel,F. Paul Wilson,2006,print,Literature & Fiction,7,title
+merged_work,G094,,2 editions,100,100,am_045141456X,052595256X,The Hunter,John Lescroart,2012,print,"Mystery, Thriller & Suspense",30,title
+merged_work,G094,,2 editions,100,100,am_045141456X,045141456X,The Hunter (Wyatt Hunt Novel),John Lescroart,2013,print,"Mystery, Thriller & Suspense",14,title
+merged_work,G095,,2 editions,100,100,am_0385320175,0440225299,Numbered Account: A Novel,Christopher Reich,1998,print,"Mystery, Thriller & Suspense",34,title
+merged_work,G095,,2 editions,100,100,am_0385320175,0385320175,Numbered Account,Christopher Reich,1998,print,"Mystery, Thriller & Suspense",6,title
+merged_work,G096,,2 editions,100,100,am_0553280902,0553280902,Hondo: A Novel,Louis L'Amour,1983,print,Literature & Fiction,42,title
+merged_work,G096,,2 editions,100,100,am_0553280902,0553802992,Hondo,Louis L'Amour,2004,print,Literature & Fiction,6,title
+merged_work,G097,,2 editions,100,100,am_0385512163,0385512163,Men and Cartoons: Stories,Jonathan Lethem,2004,print,Literature & Fiction,9,title
+merged_work,G097,,2 editions,100,100,am_0385512163,1400076803,Men and Cartoons: Stories,Jonathan Lethem,,unknown,Literature & Fiction,5,title
+merged_work,G098,,2 editions,100,100,am_0307393860,0307405966,The Story Sisters: A Novel,Alice Hoffman,2010,print,Literature & Fiction,26,title
+merged_work,G098,,2 editions,100,100,am_0307393860,0307393860,The Story Sisters: A Novel,Alice Hoffman,2009,print,Literature & Fiction,23,title
+merged_work,G099,,2 editions,100,100,am_1707894485,1707894485,In the Unlikely Event,L.J Shen,2019,print,Literature & Fiction,28,title
+merged_work,G099,,2 editions,100,100,am_1707894485,B081NS2VM3,In the Unlikely Event,L.J. Shen,,audio,Literature & Fiction,6,title
+merged_work,G100,,2 editions,100,100,am_0143119885,0670021369,A Christmas Blizzard,Garrison Keillor,2009,print,Literature & Fiction,13,title
+merged_work,G100,,2 editions,100,100,am_0143119885,0143119885,A Christmas Blizzard: A Novel,Garrison Keillor,2011,print,Literature & Fiction,11,title
+not_merged,N001,,below_threshold,89,89,am_0441203981,0441203981,Elric of Melnibone 1,Michael Moorcock,1987,print,Science Fiction & Fantasy,30,singleton
+not_merged,N001,,below_threshold,89,89,am_1534445684,1534445684,"Elric of Melniboné: The Elric Saga Part 1 (1) (Elric Saga, The)",Michael Moorcock,2022,print,Literature & Fiction,5,singleton
+not_merged,N002,,number,94,94,am_B0824NRKG3,B0824NRKG3,Arcane Dropout 6,Edmund Hughes,2019,kindle,Literature & Fiction,19,singleton
+not_merged,N002,,number,94,94,am_B07W8B5QGS,B07W8B5QGS,Arcane Dropout 3,Edmund Hughes,2019,kindle,Literature & Fiction,10,singleton
+not_merged,N003,,subset_guard,100,59,am_0373285590,0373285590,The MacGregors: Robert & Cybil,Nora Roberts,2007,print,Literature & Fiction,17,singleton
+not_merged,N003,,subset_guard,100,59,am_0373281587,0373281587,The MacGregors: Robert & Cybil: The Winning HandThe Perfect Neighbor,Nora Roberts,2012,print,Literature & Fiction,16,singleton
+not_merged,N004,,subtitle_description,100,47,am_0099534622,B00IN87YLE,The Marriage Game,Alison Weir,2014,kindle,Literature & Fiction,6,title
+not_merged,N004,,subtitle_description,100,47,am_0345511913,0345511913,The Marriage Game: A Novel of Queen Elizabeth I,Alison Weir,2015,print,Literature & Fiction,37,title
+not_merged,N005,,volume,97,97,am_B07TK6JXHB,B07TK6JXHB,Reincarnated as a Sword (Light Novel) Vol. 3,Yuu Tanaka,2019,kindle,Teen & Young Adult,9,singleton
+not_merged,N005,,volume,97,97,am_B0866GQLK9,B0866GQLK9,Reincarnated as a Sword (Light Novel) Vol. 6,Yuu Tanaka,2020,kindle,Literature & Fiction,7,singleton
+not_merged,N006,,year,90,90,am_0312262752,0312551053,"The Year's Best Science Fiction: Twenty-Sixth Annual Collection (Year's Best Science Fiction, 26)",Gardner R. Dozois,2009,print,Literature & Fiction,8,title
+not_merged,N006,,year,90,90,am_0312262752,0312308604,"Year's Best Science Fiction: Twentieth Annual Collection (Year's Best Science Fiction, 20)",Gardner R. Dozois,2003,print,Literature & Fiction,6,title
+not_merged,N007,,below_threshold,89,82,am_0758294476,0758294476,The Twelve Kingdoms: The Talon of the Hawk,Jeffe Kennedy,2015,print,Science Fiction & Fantasy,11,singleton
+not_merged,N007,,below_threshold,89,82,am_0758294433,0758294433,The Twelve Kingdoms: The Mark of the Tala,Jeffe Kennedy,2014,print,Literature & Fiction,6,singleton
+not_merged,N008,,number,100,90,am_B082Y2KFW8,B082Y2KFW8,Bone Lord 3,Dante King,2019,kindle,Literature & Fiction,30,singleton
+not_merged,N008,,number,100,90,am_B07VMDRYVK,B07VMDRYVK,Bone Lord,Dante King,2019,kindle,Literature & Fiction,15,singleton
+not_merged,N009,,subset_guard,100,65,am_0743471385,0743471385,World of Warcraft: Rise of the Horde,Christie Golden,2006,print,Literature & Fiction,27,title
+not_merged,N009,,subset_guard,100,65,am_1439172749,1439172749,World of Warcraft: The Shattering: Book One of Cataclysm,Christie Golden,2011,print,Computers & Technology,12,singleton
+not_merged,N010,,subtitle_description,100,79,am_068480154X,0684830507,Tender Is the Night,F. Scott Fitzgerald,1996,print,Literature & Fiction,25,title
+not_merged,N010,,subtitle_description,100,79,am_0141183594,0141183594,Tender is the Night: A Romance (Penguin Modern Classics),F. Scott Fitzgerald,2001,print,Literature & Fiction,9,singleton
+not_merged,N011,,volume,97,97,am_0061582409,0380710838,Fortune's Favorites,Colleen McCullough,1994,print,Literature & Fiction,18,title
+not_merged,N011,,volume,97,97,am_B00GW5GPHE,B00GW5GPHE,Fortune's Favourites (Masters of Rome Book 3),Colleen McCullough,2013,kindle,Literature & Fiction,6,singleton
+not_merged,N012,,year,94,92,am_0312262752,0312378602,The Year's Best Science Fiction: Twenty-Fifth Annual Collection (Year's Best Science Fiction),Gardner R. Dozois,2008,print,Literature & Fiction,9,title
+not_merged,N012,,year,94,92,am_031209423X,031209423X,The Year's Best Science Fiction: Tenth Annual Collection,Gardner R. Dozois,1993,print,<none>,6,title
+not_merged,N013,,below_threshold,81,76,am_B087D5PKC5,B087D5PKC5,The Vampire Trials: The Darkening: A Paranormal Reverse Harem Romance,Storm Song,2020,kindle,Literature & Fiction,6,singleton
+not_merged,N013,,below_threshold,81,76,am_B088RJ4HD8,B088RJ4HD8,The Vampire Trials: The Awakening: A Reverse Harem Fantasy Novel,Storm Song,2020,kindle,Literature & Fiction,6,singleton
+not_merged,N014,,number,97,95,am_0345434110,0345434110,"Star Wars, Episode I: The Phantom Menace",Terry Brooks,2000,print,Literature & Fiction,60,singleton
+not_merged,N014,,number,97,95,am_0345427653,0345427653,"Star Wars, Episode 1: The Phantom Menace",Terry Brooks,1999,print,Literature & Fiction,32,singleton
+not_merged,N015,,subset_guard,100,18,am_0393974995,0393974995,The Waste Land (Norton Critical Editions),T. S. Eliot,2000,print,Literature & Fiction,15,title
+not_merged,N015,,subset_guard,100,18,am_0156948702,0156948702,The Waste Land: A Facsimile and Transcript of the Original Drafts Including the Annotations of Ezra Pound (A Harvest Special),T. S. Eliot,1974,print,Literature & Fiction,7,singleton
+not_merged,N016,,subtitle_description,100,52,am_0553386026,0553801309,A Place of Hiding,Elizabeth George,2003,print,"Mystery, Thriller & Suspense",36,title
+not_merged,N016,,subtitle_description,100,52,am_B003LPV5AA,B003LPV5AA,A Place of Hiding: Part of Inspector Lynley: 12 (Inspector Lynley Mysteries 12),Elizabeth George,2009,kindle,"Mystery, Thriller & Suspense",11,singleton
+not_merged,N017,,volume,96,96,am_B00OPYOSQY,B00OPYOSQY,Cherringham - Episode 1 - 3: A Cosy Crime Series Compilation (Cherringham: Crime Series Compilations),Neil Richards,2014,kindle,"Mystery, Thriller & Suspense",41,singleton
+not_merged,N017,,volume,96,96,am_B01G58A7XU,B01G58A7XU,Cherringham - Episode 19-21: A Cosy Crime Series Compilation (Cherringham: Crime Series Compilations Book 7),Neil Richards,2016,kindle,"Mystery, Thriller & Suspense",18,singleton
+not_merged,N018,,year,100,95,am_1615641890,1615641890,"The Complete Idiot's Guide to RVing, 3e",Brent Peterson,2012,print,Literature & Fiction,33,singleton
+not_merged,N018,,year,100,95,am_002864171X,002864171X,The Complete Idiot's Guide to RVing,Brent Peterson,2002,print,Engineering & Transportation,7,singleton
+not_merged,N019,,below_threshold,81,49,am_0452295688,0452295688,"Rashi's Daughters, Book III: Rachel: A Novel of Love and the Talmud in Medieval France (Rashi's Daughters Series)",Maggie Anton,2009,print,Literature & Fiction,22,page_source
+not_merged,N019,,below_threshold,81,49,am_0976305054,0976305054,"Rashi's Daughters, Book 1: Joheved",Maggie Anton,2005,print,Literature & Fiction,13,singleton
+not_merged,N020,,number,97,97,am_B0974521FG,B0974521FG,Dragon Emperor 17: From Human to Dragon to God (Dragon Emperor (Completed Series)),Eric Vall,2021,kindle,Literature & Fiction,39,singleton
+not_merged,N020,,number,97,97,am_B088PZP17M,B088PZP17M,Dragon Emperor 9: From Human to Dragon to God (Dragon Emperor (Completed Series)),Eric Vall,2020,kindle,Literature & Fiction,10,singleton
+not_merged,N021,,subset_guard,100,72,am_0547055323,0547055323,The Best American Short Stories 2010,Richard Russo,2010,print,Literature & Fiction,32,singleton
+not_merged,N021,,subset_guard,100,72,am_B004H8GLVI,B004H8GLVI,The Best American Short Stories 2010 (The Best American Series (R)),Richard Russo,2010,print,Literature & Fiction,8,singleton
+not_merged,N022,,subtitle_description,100,53,am_068810553X,068810553X,False Prophet,Faye Kellerman,1992,print,"Mystery, Thriller & Suspense",7,singleton
+not_merged,N022,,subtitle_description,100,53,am_0061999334,0061999334,"False Prophet: A Decker/Lazarus Novel (Decker/Lazarus Novels, 5)",Faye Kellerman,2011,print,Literature & Fiction,15,singleton
+not_merged,N023,,volume,93,93,am_1975308069,1975308069,"Overlord, Vol. 12 (light novel): The Paladin of the Sacred Kingdom Part I (Overlord, 12)",Kugane Maruyama,2020,print,Science Fiction & Fantasy,9,singleton
+not_merged,N023,,volume,93,93,am_1975311531,1975311531,"Overlord, Vol. 13 (light novel): The Paladin of the Sacred Kingdom Part II (Overlord, 13)",Kugane Maruyama,2021,print,Science Fiction & Fantasy,5,singleton
+not_merged,N024,,year,100,90,am_0983588279,0983588279,Temple Secrets: Southern Fiction (Temple Secrets Series Book 1) (1),Susan Gabriel,2015,print,Literature & Fiction,44,singleton
+not_merged,N024,,year,100,90,am_099810504X,099810504X,Temple Secrets Series: Southern Fiction,Susan Gabriel,2019,print,Literature & Fiction,5,singleton
+not_merged,N025,,below_threshold,80,53,am_1608199525,1608199525,"Sidney Chambers and the Problem of Evil (Grantchester, 3)",James Runcie,2014,print,Christian Books & Bibles,31,singleton
+not_merged,N025,,below_threshold,80,53,am_1632865661,1632865661,"Sidney Chambers and The Dangers of Temptation: Grantchester Mysteries 5 (Grantchester, 5)",James Runcie,2016,print,Literature & Fiction,15,singleton
+not_merged,N026,,number,100,93,am_1449488064,1682410188,"Whiskey, Words, and A Shovel",r.h. Sin,2015,print,Literature & Fiction,16,title
+not_merged,N026,,number,100,93,am_144948459X,144948459X,Whiskey Words & a Shovel III,r.h. Sin,2017,print,Literature & Fiction,14,singleton
+not_merged,N027,,subset_guard,93,55,am_B094K2F5DV,B094K2F5DV,Empire Builder 2,Dante King,2021,kindle,Literature & Fiction,16,singleton
+not_merged,N027,,subset_guard,93,55,am_B09QLQX3QY,B09QLQX3QY,"Empire Builder 3: Breed, Populate, Conquer",Dante King,2022,kindle,Literature & Fiction,15,singleton
+not_merged,N028,,subtitle_description,100,42,am_0312869584,0812584228,"Obernewtyn (The Obernewtyn Chronicles, Book 1)",Isobelle Carmody,2000,print,Science Fiction & Fantasy,11,title
+not_merged,N028,,subtitle_description,100,42,am_0375857672,0375857672,Obernewtyn: The Obernewtyn Chronicles 1,Isobelle Carmody,2008,print,Teen & Young Adult,6,singleton
+not_merged,N029,,volume,93,93,am_1620780801,1620780801,Mafioso - Part 1,Nisa Santiago,2017,print,Literature & Fiction,7,singleton
+not_merged,N029,,volume,93,93,am_162078081X,162078081X,Mafioso - Part 2,Nisa Santiago,2018,print,Literature & Fiction,7,singleton
+not_merged,N030,,year,91,91,am_0307951340,0307951340,Hadji Murat (Vintage Classics),Leo Tolstoy,2012,print,Literature & Fiction,7,singleton
+not_merged,N030,,year,91,91,am_0812967119,0812967119,Hadji Murad (Modern Library Classics),Leo Tolstoy,2003,print,Literature & Fiction,5,singleton
+not_merged,N031,,below_threshold,88,79,am_037328571X,037328571X,First Impressions: An Anthology,Nora Roberts,2008,print,Literature & Fiction,7,singleton
+not_merged,N031,,below_threshold,88,79,am_1335142126,1335142126,First Snow: An Anthology,Nora Roberts,2017,print,Literature & Fiction,6,singleton
+not_merged,N032,,number,96,96,am_1476708207,1476708207,The Best American Poetry 2015 (The Best American Poetry series),David Lehman,2015,print,Literature & Fiction,10,singleton
+not_merged,N032,,number,96,96,am_1501127756,1501127756,Best American Poetry 2017 (Best American Poetry),David Lehman,2017,print,Literature & Fiction,9,singleton
+not_merged,N033,,subset_guard,96,55,am_1595821082,1595821082,"Vampire Hunter D Volume 8: Mysterious Journey to the North Sea, Part Two",Yoshitaka Amano,2007,print,Literature & Fiction,12,singleton
+not_merged,N033,,subset_guard,96,55,am_1595821309,1595821309,Vampire Hunter D Volume 11: Pale Fallen Angel Parts One and Two,Yoshitaka Amano,2008,print,Literature & Fiction,6,singleton
+not_merged,N034,,subtitle_description,100,44,am_B00BUB5DPK,B00BUB5DPK,This House is Haunted,John Boyne,2013,kindle,Literature & Fiction,8,singleton
+not_merged,N034,,subtitle_description,100,44,am_1590516796,B00CGHRC06,This House Is Haunted: A Novel by the Author of The Heart's Invisible Furies,John Boyne,2013,kindle,Literature & Fiction,101,title
+not_merged,N035,,volume,97,97,am_B07P66V2FF,B07P66V2FF,Skeleton Knight in Another World (Light Novel) Vol. 2,Ennki Hakari,2019,kindle,Literature & Fiction,7,singleton
+not_merged,N035,,volume,97,97,am_B083KBLTCD,B083KBLTCD,Skeleton Knight in Another World (Light Novel) Vol. 5,Ennki Hakari,2020,kindle,Teen & Young Adult,6,singleton
+not_merged,N036,,year,100,91,am_1489555811,1489555811,"The Two Babylons: Or, the Papal Worship Proved to Be the Worship of Nimrod",Alexander Hislop,2013,print,Literature & Fiction,16,title
+not_merged,N036,,year,100,91,am_B0007F50D0,B0007F50D0,"The Two Babylons: Or, The Papal Worship Proved to be the Worship of Nimrod and his Wife",Alexander Hislop,1959,print,Christian Books & Bibles,7,singleton
+not_merged,N037,,below_threshold,80,53,am_1420114794,1420114794,Highland Promise (The Murrays),Hannah Howell,2011,print,Literature & Fiction,8,singleton
+not_merged,N037,,below_threshold,80,53,am_0821774271,0821774271,Highland Groom,Hannah Howell,2003,print,Literature & Fiction,6,singleton
+not_merged,N038,,number,98,98,am_B08814JXFW,B08814JXFW,Skulduggery 6: Building a Criminal Empire,Logan Jacobs,2020,kindle,Literature & Fiction,82,singleton
+not_merged,N038,,number,98,98,am_B084H6RVM5,B084H6RVM5,Skulduggery 4: Building a Criminal Empire,Logan Jacobs,2020,kindle,Literature & Fiction,71,singleton
+not_merged,N039,,subset_guard,100,50,am_0786937920,0786937920,"Ravnica: Ravnica Cycle, Book I",Cory J. Herndon,2005,print,Teen & Young Adult,6,singleton
+not_merged,N039,,subset_guard,100,50,am_B0036S49K0,B0036S49K0,Ravnica: Ravnica Cycle,Cory J. Herndon,2010,kindle,"Mystery, Thriller & Suspense",5,singleton
+not_merged,N040,,subtitle_description,100,74,am_0380718340,0380718340,Cruel & Unusual (Kay Scarpetta Mysteries),Patricia Cornwell,1994,print,Literature & Fiction,18,title
+not_merged,N040,,subtitle_description,100,74,am_0380718340,B002YPORRG,Cruel and Unusual: Scarpetta 4 (Kay Scarpetta),Patricia Cornwell,2009,kindle,"Mystery, Thriller & Suspense",90,title
+not_merged,N041,,volume,98,98,am_161986200X,161986200X,L. Ron Hubbard Presents Writers of the Future Volume 29,L. Ron Hubbard,2013,print,Reference,16,singleton
+not_merged,N041,,volume,98,98,am_1619860767,1619860767,L. Ron Hubbard Presents Writers of the Future Volume 28,L. Ron Hubbard,2012,print,Literature & Fiction,7,singleton
+not_merged,N042,,year,99,99,am_0394716787,0394716787,The Complete Tales and Poems of Edgar Allan Poe,Edgar Allan Poe,1975,print,Literature & Fiction,25,title
+not_merged,N042,,year,99,99,am_1435154460,1435154460,Complete Tales & Poems Of Edgar Allan Po,Edgar Allan Poe,2015,print,Literature & Fiction,17,singleton
+not_merged,N043,,below_threshold,80,64,am_1250238870,B0879FS3JC,Margaret Truman's Murder on the Metro: A Capital Crimes Novel,Margaret Truman,2021,kindle,"Mystery, Thriller & Suspense",14,title
+not_merged,N043,,below_threshold,80,64,am_0765365006,B008BHANEC,Margaret Truman's Experiment in Murder: A Capital Crimes Novel,Margaret Truman,2012,kindle,"Mystery, Thriller & Suspense",13,title
+not_merged,N044,,number,100,92,am_B0BP79FVMS,B0BP79FVMS,Dream Master,Logan Jacobs,,kindle,Literature & Fiction,38,singleton
+not_merged,N044,,number,100,92,am_B0C2WGL9KP,B0C2WGL9KP,Dream Master 2,Logan Jacobs,2023,kindle,Literature & Fiction,11,singleton
+not_merged,N045,,subset_guard,100,38,am_1728214793,1728214793,"A Spot of Trouble: Sidesplitting Enemies-to-Lovers Romantic Comedy (Turtle Beach, 1)",Teri Wilson,2021,print,Literature & Fiction,21,subtitle
+not_merged,N045,,subset_guard,100,38,am_1728214793,B08QXTD47N,A Spot of Trouble (Turtle Beach Book 1),Teri Wilson,2021,kindle,Literature & Fiction,16,subtitle
+not_merged,N046,,subtitle_description,100,55,am_067964010X,B000FC239Y,The Education of Henry Adams,Henry Adams,2004,kindle,Literature & Fiction,5,title
+not_merged,N046,,subtitle_description,100,55,am_1598530607,1598530607,The Education of Henry Adams: A Library of America Paperback Classic,Henry Adams,2009,print,Biographies & Memoirs,6,singleton
+not_merged,N047,,volume,94,92,am_1582406987,1582406987,"The Walking Dead, Book 2",Robert Kirkman,2007,print,Literature & Fiction,51,singleton
+not_merged,N047,,volume,94,92,am_1632152711,1632152711,"The Walking Dead Book 11 (Walking Dead, 11)",Robert Kirkman,2015,print,Comics & Graphic Novels,31,singleton
+not_merged,N048,,year,95,95,am_0312262752,1250119243,"The Year's Best Science Fiction: Thirty-Fourth Annual Collection (Year's Best Science Fiction, 34)",Gardner R. Dozois,2017,print,Literature & Fiction,16,title
+not_merged,N048,,year,95,95,am_0312262752,0312363354,"The Year's Best Science Fiction: Twenty-Fourth Annual Collection (Year's Best Science Fiction, 24)",Gardner R. Dozois,2007,print,Literature & Fiction,5,title
+not_merged,N049,,below_threshold,82,78,am_1477821422,B00MR3MWTK,Finding Sheba (An Omar Zagouri Thriller),H. B. Moore,2015,kindle,"Mystery, Thriller & Suspense",168,title
+not_merged,N049,,below_threshold,82,78,am_1947152408,1947152408,Finding Us (Pine Valley),Heather B. Moore,2018,print,Literature & Fiction,9,singleton
+not_merged,N050,,number,98,98,am_B08RZF5DD9,B08RZF5DD9,The Wolf King's Lair 1: A Dungeon Core LitRPG tale,Devan Drake,2021,kindle,Literature & Fiction,15,singleton
+not_merged,N050,,number,98,98,am_B0BCH14WT9,B0BCH14WT9,The Wolf King's Lair 5: A Dungeon Core LitRPG Tale,Devan Drake,,kindle,Literature & Fiction,7,singleton
+subtitle_merge,S001,,description similarity 70,100,67,am_0060293233,0688166776,The Wonderful Wizard of Oz (Books of Wonder),L. Frank Baum,2001,print,Education & Teaching,21,subtitle
+subtitle_merge,S001,,description similarity 70,100,67,am_0060293233,1611062381,The Wonderful Wizard of Oz: A Radio Dramatization (Oz Series),L. Frank Baum,2011,audio,Children's Books,24,subtitle
+subtitle_merge,S002,,description similarity 100,100,54,am_0060394412,0061577650,Citizen Vince,Jess Walter,2008,print,"Mystery, Thriller & Suspense",20,subtitle
+subtitle_merge,S002,,description similarity 100,100,54,am_0060394412,B007XIC45Q,Citizen Vince: An Edgar Award Winner,Jess Walter,2012,kindle,"Mystery, Thriller & Suspense",40,subtitle
+subtitle_merge,S003,,description similarity 73,100,49,am_0061020621,0061020621,Reaper Man,Terry Pratchett,2002,print,Literature & Fiction,48,subtitle
+subtitle_merge,S003,,description similarity 73,100,49,am_0061020621,0062237357,"Reaper Man: A Novel of Discworld (Discworld, 11)",Terry Pratchett,2013,print,Literature & Fiction,15,subtitle
+subtitle_merge,S004,,description similarity 100,100,62,am_0061056901,0061056901,Interesting Times (Discworld),Terry Pratchett,1998,print,Literature & Fiction,34,subtitle
+subtitle_merge,S004,,description similarity 100,100,62,am_0061056901,0062276298,"Interesting Times: A Novel of Discworld (Discworld, 18)",Terry Pratchett,2014,print,Science Fiction & Fantasy,15,subtitle
+subtitle_merge,S005,,description similarity 100,100,52,am_0061348155,0061348163,Crunch Time (Goldy Schulz),Diane Mott Davidson,2012,print,"Mystery, Thriller & Suspense",45,subtitle
+subtitle_merge,S005,,description similarity 100,100,52,am_0061348155,0061348155,"Crunch Time: A Novel of Suspense (Goldy Schulz, 16)",Diane Mott Davidson,2011,print,"Mystery, Thriller & Suspense",79,subtitle
+subtitle_merge,S006,,description similarity 80,100,36,am_0061429783,0061429783,The Mummy Case,Elizabeth Peters,2007,print,"Mystery, Thriller & Suspense",13,subtitle
+subtitle_merge,S006,,description similarity 80,100,36,am_0061429783,B000GCFD9A,The Mummy Case: An Amelia Peabody Novel of Suspense,Elizabeth Peters,2009,kindle,Literature & Fiction,52,subtitle
+subtitle_merge,S007,,description similarity 100,100,75,am_0140366873,0812966295,King Solomon's Mines,H. Rider Haggard,2002,print,Literature & Fiction,11,subtitle
+subtitle_merge,S007,,description similarity 100,100,75,am_0140366873,0140366873,King Solomon's Mines: Complete and Unabridged (Puffin Classics),H. Rider Haggard,1996,print,Children's Books,8,subtitle
+subtitle_merge,S008,,description similarity 100,100,37,am_0312975767,0312975767,Don't Close Your Eyes,Carlene Thompson,2000,print,"Mystery, Thriller & Suspense",13,subtitle
+subtitle_merge,S008,,description similarity 100,100,37,am_0312975767,B003E4CXRM,Don't Close Your Eyes: Don't Trust Your Friends. Don't Believe What You Hear. And Whatever You Do...,Carlene Thompson,2007,kindle,"Mystery, Thriller & Suspense",5,subtitle
+subtitle_merge,S009,,description similarity 71,100,49,am_0345339703,0618002227,"The Fellowship of the Ring (The Lord of the Rings, Part 1)",J. R. R. Tolkien,1999,print,Humor & Entertainment,106,subtitle
+subtitle_merge,S009,,description similarity 71,100,49,am_0345339703,0547928211,"The Fellowship Of The Ring: Being the First Part of The Lord of the Rings (The Lord of the Rings, 1)",J. R. R. Tolkien,2012,print,Humor & Entertainment,82,subtitle
+subtitle_merge,S010,,description similarity 100,100,47,am_042518756X,051513449X,"Guilty Pleasures (Anita Blake, Vampire Hunter: Book 1)",Laurell K. Hamilton,2002,print,Literature & Fiction,144,subtitle
+subtitle_merge,S010,,description similarity 100,100,47,am_042518756X,B0030MTPU6,"Guilty Pleasures: An Anita Blake, Vampire Hunter Novel",Laurell K. Hamilton,2002,kindle,Literature & Fiction,85,subtitle
+subtitle_merge,S011,,description similarity 84,100,58,am_045141733X,0451417348,The Golden Princess (A Novel of the Change),S. M. Stirling,2015,print,Literature & Fiction,12,subtitle
+subtitle_merge,S011,,description similarity 84,100,58,am_045141733X,045141733X,The Golden Princess: A Novel of the Change (Change Series),S. M. Stirling,2014,print,Science Fiction & Fantasy,42,subtitle
+subtitle_merge,S012,,description similarity 99,100,35,am_0486285537,0486285537,100 Best-Loved Poems (Dover Thrift Editions),Philip Smith,1995,print,Literature & Fiction,76,subtitle
+subtitle_merge,S012,,description similarity 99,100,35,am_0486285537,B008TVLU8I,"100 Best-Loved Poems: Shakespeare, Poe, Tennyson, Whitman, Dickinson, Wordsworth, Yeats, Frost and More (Dover Thrift Editions: Poetry)",Philip Smith,2012,kindle,Literature & Fiction,37,subtitle
+subtitle_merge,S013,,description similarity 92,100,69,am_0615520855,B004CFAOYG,When No One is Watching,Joseph Hayes,2010,kindle,"Mystery, Thriller & Suspense",266,subtitle
+subtitle_merge,S013,,description similarity 92,100,69,am_0615520855,0984387943,When No One is Watching: Midpoint Trade Books,Joseph Hayes,2010,print,Literature & Fiction,12,subtitle
+subtitle_merge,S014,,description similarity 79,100,74,am_0615953778,0615953778,The Defendants (Thaddeus Murfee Thrillers),John Ellsworth,2014,print,"Mystery, Thriller & Suspense",15,subtitle
+subtitle_merge,S014,,description similarity 79,100,74,am_0615953778,B08HHGM5RG,The Defendants: 3-Book Collector's Edition,John Ellsworth,2020,kindle,"Mystery, Thriller & Suspense",35,subtitle
+subtitle_merge,S015,,description similarity 72,100,72,am_0684846845,0743278909,Jonathan Livingston Seagull,Richard Bach,2006,print,Literature & Fiction,98,subtitle
+subtitle_merge,S015,,description similarity 72,100,72,am_0684846845,147679331X,Jonathan Livingston Seagull: The Complete Edition,Richard Bach,2014,print,Literature & Fiction,102,subtitle
+subtitle_merge,S016,,description similarity 100,100,22,am_0804137250,1984823159,Armada,Ernest Cline,2018,print,Science Fiction & Fantasy,5,subtitle
+subtitle_merge,S016,,description similarity 100,100,22,am_0804137250,0804137277,Armada: A novel by the author of Ready Player One,Ernest Cline,2016,print,Literature & Fiction,101,subtitle
+subtitle_merge,S017,,description similarity 83,100,42,am_0957689136,0957689136,The Only Blue Door,Joan Fallon,2013,print,Literature & Fiction,10,subtitle
+subtitle_merge,S017,,description similarity 83,100,42,am_0957689136,B00EVVJJ56,THE ONLY BLUE DOOR: Based on actual events in World War II,Joan Fallon,2013,kindle,Literature & Fiction,69,subtitle
+subtitle_merge,S018,,description similarity 72,100,42,am_0978924746,B004IPPKCG,Redfield Farm,Judith Redline Coopey,2011,kindle,Literature & Fiction,144,subtitle
+subtitle_merge,S018,,description similarity 72,100,42,am_0978924746,0978924746,Redfield Farm: A Novel of the Underground Railroad,Judith Redline Coopey,2010,print,Literature & Fiction,59,subtitle
+subtitle_merge,S019,,description similarity 100,100,58,am_0979621135,0980003431,The Crown Conspiracy,Michael J. Sullivan,2008,print,Literature & Fiction,22,subtitle
+subtitle_merge,S019,,description similarity 100,100,58,am_0979621135,0979621135,The Crown Conspiracy: The Riyria Revelations,Michael J. Sullivan,2010,print,Science Fiction & Fantasy,31,subtitle
+subtitle_merge,S020,,description similarity 100,100,56,am_0980245397,B0072NM3PI,Once Bitten (The Haven Series Book 1),Kalayna Price,2009,kindle,Literature & Fiction,17,subtitle
+subtitle_merge,S020,,description similarity 100,100,56,am_0980245397,0980245397,Once Bitten: The Haven Series (Novel of Haven),Kalayna Price,2009,print,Literature & Fiction,21,subtitle
+subtitle_merge,S021,,description similarity 100,100,42,am_0999303309,0999303309,Silent Gavel (A Crawford Mystery),Merissa Racine,2018,print,"Mystery, Thriller & Suspense",11,subtitle
+subtitle_merge,S021,,description similarity 100,100,42,am_0999303309,B078QWVMWX,Silent Gavel: For fans of mystery and suspense (A Crawford Mystery Book 1),Merissa Racine,2017,kindle,"Mystery, Thriller & Suspense",29,subtitle
+subtitle_merge,S022,,description similarity 91,100,70,am_1439133328,1439133328,"Live Free or Die (Troy Rising, Book 1)",John Ringo,2010,print,Literature & Fiction,37,subtitle
+subtitle_merge,S022,,description similarity 91,100,70,am_1439133328,1439133972,Live Free or Die: Troy Rising I,John Ringo,2010,print,Science Fiction & Fantasy,52,subtitle
+subtitle_merge,S023,,description similarity 100,100,31,am_1439172633,144242933X,The Gates (The Samuel Johnson Series),John Connolly,2011,print,Children's Books,20,subtitle
+subtitle_merge,S023,,description similarity 100,100,31,am_1439172633,B002QJZ9Y0,The Gates: A Samuel Johnson Tale,John Connolly,2009,kindle,"Mystery, Thriller & Suspense",24,subtitle
+subtitle_merge,S024,,description similarity 100,100,75,am_1460902203,1460902203,The Oldest Living Vampire Tells All,Joseph Duncan,2011,print,Science Fiction & Fantasy,13,subtitle
+subtitle_merge,S024,,description similarity 100,100,75,am_1460902203,B0041G6NGO,The Oldest Living Vampire Tells All: Revised and Expanded (The Oldest Living Vampire Saga Book 1),Joseph Duncan,2010,kindle,Literature & Fiction,104,subtitle
+subtitle_merge,S025,,description similarity 100,100,12,am_1472229959,1472229959,The Letter,Kathryn Hughes,2016,print,Literature & Fiction,95,subtitle
+subtitle_merge,S025,,description similarity 100,100,12,am_1472229959,B00USXECJO,The Letter: The most heartwrenching love story and World War Two historical fiction for summer reading,Kathryn Hughes,2015,kindle,Literature & Fiction,19,subtitle
+subtitle_merge,S026,,description similarity 94,100,15,am_1538713470,1538713470,The Sister,Louise Jensen,2018,print,"Mystery, Thriller & Suspense",14,subtitle
+subtitle_merge,S026,,description similarity 94,100,15,am_1538713470,1786810026,The Sister: A psychological thriller with a brilliant twist you won't see coming,Louise Jensen,2016,print,"Mystery, Thriller & Suspense",87,subtitle
+subtitle_merge,S027,,description similarity 70,100,30,am_1538764172,1538764172,The Summer House,Jenny Hale,2019,print,Literature & Fiction,14,subtitle
+subtitle_merge,S027,,description similarity 70,100,30,am_1538764172,1786812053,The Summer House: A gorgeous feel good romance that will have you hooked,Jenny Hale,2017,print,Literature & Fiction,27,subtitle
+subtitle_merge,S028,,description similarity 100,100,28,am_1608091430,1608091430,Lincoln's Bodyguard (Lincoln's Bodyguard Series),TJ Turner,2015,print,"Mystery, Thriller & Suspense",6,subtitle
+subtitle_merge,S028,,description similarity 100,100,28,am_1608091430,B00R3KLYGO,Lincoln's Bodyguard: In A Heroic Act Of Bravery Saves Our Beloved President! John Wilkes Booth Killed In Act Of Treason (Lincoln's Bodyguard Series Book 1),TJ Turner,2015,kindle,"Mystery, Thriller & Suspense",42,subtitle
+subtitle_merge,S029,,description similarity 85,100,40,am_1787474321,1787474321,Dirty Little Secrets,Jo Spain,,unknown,"Mystery, Thriller & Suspense",6,subtitle
+subtitle_merge,S029,,description similarity 85,100,40,am_1787474321,B078YZQJ9X,"Dirty Little Secrets: a gripping thriller of lies, privilege, secrets and betrayal",Jo Spain,2019,kindle,"Mystery, Thriller & Suspense",7,subtitle
+subtitle_merge,S030,,description similarity 100,100,58,am_B0BDXBHHD9,B0BFK3MJZ8,Bride of Demonio (Kings of Terror Book 1),Mae Royal,2022,kindle,Literature & Fiction,15,subtitle
+subtitle_merge,S030,,description similarity 100,100,58,am_B0BDXBHHD9,B0BDXBHHD9,Bride of Demonio: A Paranormal Horror RH (Kings of Terror),Mae Royal,2022,print,Literature & Fiction,7,subtitle

@@ -1,0 +1,81 @@
+{
+  "sentences_scored": 294757,
+  "aspect_mentions": 797266,
+  "clause_scored_mentions": 69184,
+  "pos_threshold": 0.5,
+  "neg_threshold": -0.5,
+  "per_aspect": {
+    "plot": {
+      "mentions": 150845,
+      "mean_polarity": 0.4247,
+      "share_positive": 0.6952,
+      "share_negative": 0.2706
+    },
+    "writing_style": {
+      "mentions": 55286,
+      "mean_polarity": 0.5617,
+      "share_positive": 0.7717,
+      "share_negative": 0.21
+    },
+    "characters": {
+      "mentions": 78499,
+      "mean_polarity": 0.4907,
+      "share_positive": 0.7337,
+      "share_negative": 0.2424
+    },
+    "world_building": {
+      "mentions": 18675,
+      "mean_polarity": 0.529,
+      "share_positive": 0.751,
+      "share_negative": 0.221
+    },
+    "pacing": {
+      "mentions": 37819,
+      "mean_polarity": 0.0864,
+      "share_positive": 0.5235,
+      "share_negative": 0.4414
+    },
+    "editing_quality": {
+      "mentions": 53464,
+      "mean_polarity": 0.271,
+      "share_positive": 0.6213,
+      "share_negative": 0.3518
+    },
+    "dialogue": {
+      "mentions": 42214,
+      "mean_polarity": 0.1977,
+      "share_positive": 0.5842,
+      "share_negative": 0.3881
+    },
+    "humor": {
+      "mentions": 60711,
+      "mean_polarity": 0.5455,
+      "share_positive": 0.7602,
+      "share_negative": 0.215
+    },
+    "emotional_impact": {
+      "mentions": 103607,
+      "mean_polarity": 0.4758,
+      "share_positive": 0.7227,
+      "share_negative": 0.2474
+    },
+    "ending": {
+      "mentions": 58482,
+      "mean_polarity": 0.2029,
+      "share_positive": 0.5833,
+      "share_negative": 0.3818
+    },
+    "complexity": {
+      "mentions": 55638,
+      "mean_polarity": 0.5123,
+      "share_positive": 0.7452,
+      "share_negative": 0.2325
+    },
+    "tone_dark": {
+      "mentions": 82026,
+      "mean_polarity": 0.4609,
+      "share_positive": 0.7163,
+      "share_negative": 0.2564
+    }
+  }
+}

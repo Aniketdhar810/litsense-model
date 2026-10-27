@@ -1,0 +1,280 @@
+{
+  "genre_slices": [
+    "Literature & Fiction",
+    "Mystery, Thriller & Suspense",
+    "Science Fiction & Fantasy"
+  ],
+  "editions": 454008,
+  "editions_by_kind": {
+    "print": 383069,
+    "kindle": 58466,
+    "audio": 7253,
+    "unknown": 5220
+  },
+  "boxsets": 2948,
+  "merge_edges": {
+    "isbn": 513,
+    "page_source": 2370,
+    "subtitle": 1603,
+    "title": 64943
+  },
+  "works": 384579,
+  "multi_member_works": 50127,
+  "status": {
+    "kept": {
+      "works": 130960,
+      "interactions": 4499455
+    },
+    "out_of_slice": {
+      "works": 250671,
+      "interactions": 4166787
+    },
+    "boxset": {
+      "works": 2948,
+      "interactions": 63563
+    }
+  },
+  "kept": {
+    "works": 130960,
+    "editions": 170881,
+    "interactions": 4499455,
+    "members_per_work": {
+      "1": 104716,
+      "2": 18482,
+      "3": 4949,
+      "4-5": 2158,
+      "6-10": 583,
+      "11+": 72
+    },
+    "rescued_editions": 4088,
+    "rescued_interactions": 113016,
+    "interactions_by_edition_kind": {
+      "audio": 45723,
+      "kindle": 2122098,
+      "print": 2317110,
+      "unknown": 14524
+    },
+    "by_primary_slice": {
+      "Literature & Fiction": {
+        "works": 77553,
+        "interactions": 2203640
+      },
+      "Mystery, Thriller & Suspense": {
+        "works": 42737,
+        "interactions": 2080689
+      },
+      "Science Fiction & Fantasy": {
+        "works": 10670,
+        "interactions": 215126
+      }
+    },
+    "by_primary_genre": {
+      "Thriller": {
+        "works": 29075,
+        "interactions": 1741859
+      },
+      "Fiction (general)": {
+        "works": 50638,
+        "interactions": 1240721
+      },
+      "Mystery": {
+        "works": 14406,
+        "interactions": 402270
+      },
+      "Action & Adventure": {
+        "works": 5719,
+        "interactions": 190631
+      },
+      "Fantasy": {
+        "works": 6358,
+        "interactions": 157311
+      },
+      "Women's Fiction": {
+        "works": 3498,
+        "interactions": 99080
+      },
+      "Science Fiction": {
+        "works": 4635,
+        "interactions": 96528
+      },
+      "Criticism & Essays": {
+        "works": 3528,
+        "interactions": 75371
+      },
+      "Historical Fiction": {
+        "works": 344,
+        "interactions": 63255
+      },
+      "Contemporary Fiction": {
+        "works": 1706,
+        "interactions": 63150
+      },
+      "Humor & Satire": {
+        "works": 1437,
+        "interactions": 56570
+      },
+      "War & Military": {
+        "works": 95,
+        "interactions": 53505
+      },
+      "Short Stories": {
+        "works": 2486,
+        "interactions": 41297
+      },
+      "Literary Fiction": {
+        "works": 1213,
+        "interactions": 34519
+      },
+      "Poetry": {
+        "works": 2101,
+        "interactions": 33346
+      },
+      "Classics": {
+        "works": 719,
+        "interactions": 32921
+      },
+      "Drama & Plays": {
+        "works": 1011,
+        "interactions": 23843
+      },
+      "Horror": {
+        "works": 125,
+        "interactions": 23321
+      },
+      "Biography & Memoir": {
+        "works": 118,
+        "interactions": 19026
+      },
+      "Mythology & Folklore": {
+        "works": 661,
+        "interactions": 13899
+      },
+      "Romance": {
+        "works": 759,
+        "interactions": 12690
+      },
+      "Religious & Inspirational": {
+        "works": 161,
+        "interactions": 9896
+      },
+      "LGBTQ+": {
+        "works": 65,
+        "interactions": 7445
+      },
+      "Graphic Novels": {
+        "works": 40,
+        "interactions": 2752
+      },
+      "Children's": {
+        "works": 25,
+        "interactions": 2388
+      },
+      "Young Adult": {
+        "works": 35,
+        "interactions": 1829
+      },
+      "Westerns": {
+        "works": 2,
+        "interactions": 32
+      }
+    },
+    "with_series": 33741,
+    "with_author": 130937
+  },
+  "goodreads": {
+    "enabled": false,
+    "editions_matched": 0,
+    "edition_match_rate": 0.0,
+    "kept_works_matched": 0,
+    "kept_works_unmatched": 130960
+  },
+  "near_misses": {
+    "below_threshold": 38325,
+    "subset_guard": 35644,
+    "volume": 8791,
+    "number": 6852,
+    "subtitle_description": 5376,
+    "year": 1496
+  },
+  "subtitle_rule": {
+    "already_merged": 583,
+    "blocked_volume_or_work": 2734,
+    "candidates": 10852,
+    "dissimilar_description": 5376,
+    "merged": 1603,
+    "no_description": 556,
+    "kept_works_joined": 648
+  },
+  "largest_kept_works": [
+    {
+      "canonical_id": "am_0140373373",
+      "title": "Pride and Prejudice (Bantam Classics)",
+      "author": "Jane Austen",
+      "n_members": 31,
+      "n_interactions": 634
+    },
+    {
+      "canonical_id": "am_0261102001",
+      "title": "The Hobbit",
+      "author": "J. R. R. Tolkien",
+      "n_members": 27,
+      "n_interactions": 1137
+    },
+    {
+      "canonical_id": "am_0061992151",
+      "title": "Dracula (Dover Thrift Editions: Classic Novels)",
+      "author": "Bram Stoker",
+      "n_members": 26,
+      "n_interactions": 426
+    },
+    {
+      "canonical_id": "am_0140275363",
+      "title": "The Iliad",
+      "author": "Homer",
+      "n_members": 25,
+      "n_interactions": 573
+    },
+    {
+      "canonical_id": "am_0140440410",
+      "title": "Anna Karenina",
+      "author": "Leo Tolstoy",
+      "n_members": 21,
+      "n_interactions": 475
+    },
+    {
+      "canonical_id": "am_0140444300",
+      "title": "Les Miserables",
+      "author": "Victor Hugo",
+      "n_members": 21,
+      "n_interactions": 424
+    },
+    {
+      "canonical_id": "am_0140268863",
+      "title": "The Odyssey",
+      "author": "Homer",
+      "n_members": 20,
+      "n_interactions": 633
+    },
+    {
+      "canonical_id": "am_0007525540",
+      "title": "The Lord Of The Rings",
+      "author": "J. R. R. Tolkien",
+      "n_members": 20,
+      "n_interactions": 594
+    },
+    {
+      "canonical_id": "am_0141321598",
+      "title": "Anne of Green Gables",
+      "author": "L.M. Montgomery",
+      "n_members": 19,
+      "n_interactions": 319
+    },
+    {
+      "canonical_id": "am_0316001821",
+      "title": "The Lovely Bones",
+      "author": "Alice Sebold",
+      "n_members": 17,
+      "n_interactions": 1264
+    }
+  ]
+}

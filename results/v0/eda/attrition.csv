@@ -1,0 +1,10 @@
+step,users,items,interactions
+5-core,776370.0,495063.0,9488297.0
+metadata found,,495063.0,
+non-narrative removed,,454008.0,8729805.0
+box sets removed,,451060.0,8666242.0
+editions merged into works,,381631.0,8666242.0
+genre slices (any edition),,130960.0,4499455.0
+"one rating per (user, work)",,,4496367.0
+k-core,,,3384103.0
+sized to target,10987.0,4190.0,109454.0

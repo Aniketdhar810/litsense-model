@@ -1,0 +1,205 @@
+project:
+  seed: 42
+  data_version: v0              # v0 ~100K interactions (development), v1 ~250K (final)
+  drive_root: /content/drive/MyDrive/litsense
+  raw_root: /content/raw
+  local_root: ./local           # used by --sample runs
+  local_raw_root: ./local/raw_sample   # --sample runs read local heads of streamed sources from here
+
+sources:
+  ratings_5core: https://mcauleylab.ucsd.edu/public_datasets/data/amazon_2023/benchmark/5core/rating_only/Books.csv.gz
+  meta_books:    https://mcauleylab.ucsd.edu/public_datasets/data/amazon_2023/raw/meta_categories/meta_Books.jsonl.gz
+  reviews_books: https://mcauleylab.ucsd.edu/public_datasets/data/amazon_2023/raw/review_categories/Books.jsonl.gz
+  goodreads_page: https://mcauleylab.ucsd.edu/public_datasets/gdrive/goodreads/UCSD%20Book%20Graph.html
+  goodreads_base: https://mcauleylab.ucsd.edu/public_datasets/gdrive/goodreads   # + /<file>; the page's Drive links 404
+  goodreads_files: [goodreads_books.json.gz, goodreads_book_series.json.gz,
+                    goodreads_book_works.json.gz, goodreads_reviews_spoiler.json.gz]
+  fasttext_lid: https://dl.fbaipublicfiles.com/fasttext/supervised-models/lid.176.ftz
+
+data:
+  genre_slices: [Literature & Fiction, 'Mystery, Thriller & Suspense',
+                 Science Fiction & Fantasy]   # user choice 2026-10-13 (D26); categories[1] values
+  use_goodreads_graph: false    # ISBN join to the Goodreads book graph; user enables after data.meta
+  stream: {chunk_bytes: 1048576, retries: 5, timeout_s: 60, checkpoint_rows: 50000}
+  genre_slice_rule: {min_slices: 2, max_slices: 3, target_multiple: 4}   # s7.2 proposal only
+  fiction_allowlist: [Literature & Fiction, Science Fiction & Fantasy,
+                      'Mystery, Thriller & Suspense', Romance, Teen & Young Adult]
+  title_blocklist: [journal, planner, notebook, coloring book, colouring book, calendar,
+                    sticker book, activity book, blank book, workbook, study guide,
+                    cliffsnotes, sparknotes, summary of, test prep, puzzle book]
+  min_pages: 40
+  min_review_chars: 20
+  max_review_chars: 5000
+  lid_min_confidence: 0.5       # flag non-English only when fastText is this sure (D35)
+  kcore: {user: 5, item: 10}    # tune after EDA
+  target_interactions: {v0: 100000, v1: 250000}
+  size_tolerance: 0.15
+  split_quantiles: [0.85, 0.925]
+  relevance_min_rating: 4
+  longtail_fraction: 0.8
+  sparsity_buckets: [[1, 2], [3, 5], [6, 10], [11, 20], [21, 1000000]]
+  # regex entries containing '?' must be quoted: PyYAML ends a plain flow scalar at '?'
+  shipping_patterns: [arrived damaged, 'pages (were )?(missing|falling out|torn|blank)',
+                      wrong (book|edition|item), '(print|font) (is|was) (too )?(small|tiny|blurry)',
+                      binding, 'cover (was )?(bent|damaged|ripped)', kindle (version|formatting),
+                      the seller, shipping, package, delivered]
+
+canonical:
+  drop_boxsets: true
+  fuzzy_threshold: 90           # rapidfuzz token_set_ratio on normalized titles
+  subset_guard_threshold: 90    # also token_sort_ratio: token_set is 100 for any word subset (D28)
+  max_year_gap: 3               # applied to fuzzy (non-identical) title matches only (D28)
+  # "Title" + "Title: subtitle" merges also need similar blurbs (D32): rapidfuzz token_sort_ratio
+  # on the first description_chars characters (features, else description); none -> no merge
+  subtitle_description_threshold: 70
+  subtitle_description_chars: 500
+  boxset_patterns: ['box(ed)? set', omnibus, complete series, complete collection,
+                    collection set, 'books? \d+ ?(-|to|through) ?\d+', '\d+ ?books? set', trilogy set]
+  edition_noise: [hardcover, paperback, mass market, large print, unabridged, abridged,
+                  illustrated edition, anniversary edition, special edition, deluxe edition,
+                  collector's edition, reprint, kindle edition, audio cd, library binding,
+                  a novel, a thriller, a mystery, a memoir,
+                  us edition, uk edition, international edition, revised edition, new edition,
+                  reissue, movie tie-in, media tie-in, tie-in, mti]
+  # a subtitle after ':' is dropped from the matching key when it is marketing, not title (D28)
+  subtitle_noise_patterns: ['^an? [\w'' -]+ (novel|thriller|mystery|romance|memoir|story)$',
+                            'best ?sell', sensation, 'sunday times|new york times', book club,
+                            now a major, tiktok, 'from the (author|bestselling)', soon to be]
+
+models:
+  # D47: v0 has 23 batches per epoch at 4096, so 300 epochs were ~7K steps against the paper's
+  # ~35K; batch 2048 + 1500 epochs matches that budget, early stopping decides the real count.
+  # D48: dim 128 (sweep winner on the inner split, +3% raw on val); inner_split temporal so early
+  # stopping sees the same shift as the outer val (the per-user split rose while val fell).
+  lightgcn: {dim: 128, layers: 3, lr: 0.001, batch_size: 2048, max_epochs: 1500,
+             reg: 1.0e-4, n_negs: 5, eval_every: 5, patience: 10,
+             inner_split: temporal, inner_val_fraction: 0.1, inner_val_min_user: 6,
+             metric: ndcg@10}
+  # stage models.lightgcn_sweep (val only, not in `run all --until eval.val`): the grid is
+  # scored on the inner split; the user picks, then edits models.lightgcn above.
+  lightgcn_sweep: {dims: [64, 128], regs: [1.0e-5, 3.0e-5, 1.0e-4], max_epochs: 1500}
+  als: {factors: 64, regularization: 0.01, iterations: 30, alpha: 20}
+  itemknn: {k: 100, shrink: 10}
+  popularity: {bayes_m: 10, trend_half_life_days: 180}
+  # D47: paper-style additive fusion, no normalization; W starts at zero so training begins at
+  # raw LightGCN and learns only the text correction; w_reg is L2 on W per step.
+  # D48: gcn_dropout hides e_gcn for 30% of items per step so W gets a gradient (BPR was 0.006).
+  projection: {lr: 0.001, epochs: 10, steps_per_epoch: 1000, batch_size: 1024, n_negs: 5,
+               normalize_items: false, w_init: zero, w_reg: 1.0e-4, gcn_dropout: 0.3,
+               shuffled_control: true}
+  static_fusion_alphas: [0.5, 0.7, 0.9]   # control only
+
+content:
+  model_name: sentence-transformers/all-MiniLM-L6-v2
+  max_seq_length: 256
+  batch_size: 256
+  anisotropy_warn: 0.5
+
+nlp:
+  spacy_n_process: 2            # fall back to 1 if Colab hangs
+  min_sentence_tokens: 4
+  max_sentence_tokens: 80
+  sentence_embed_batch: 512
+  embedding_dim: 384            # MiniLM output; asserted against every sentence artifact (s2.2 #8)
+  chunk_rows: 200000            # embedding checkpoint parts; aspect and sentiment chunk size
+  sentiment_model: distilbert-base-uncased-finetuned-sst-2-english
+  sentiment_batch: 256
+  sentiment_max_length: 128
+  # s10.3 ONNX parity: fp32 cosine per text, int8 mean and min; one-thread latency budget (ms)
+  onnx_parity: {texts: 200, fp32_min_cos: 0.9999, int8_mean_cos: 0.99, int8_min_cos: 0.98,
+                max_latency_ms: 50}
+  clause_split_markers: [' but ', ' although ', ' though ', ' however ', ' yet ', ' whereas ']
+  pos_threshold: 0.5
+  neg_threshold: -0.5
+
+aspects:
+  names: [plot, writing_style, characters, world_building, pacing, editing_quality,
+          dialogue, humor, emotional_impact, ending, complexity, tone_dark]
+  tau_default: 0.45             # tune per aspect in s11.5
+  tau: {}
+  annotation_sample: {total: 300, with_hit: 200}   # s11.5 step 1: labelled by user + teammate
+  # s11.5 steps 4-5 (nlp.validate_aspects): tau grid [lo, hi, step], tuning half, F1 floors
+  validation: {tau_grid: [0.30, 0.80, 0.01], tune_fraction: 0.5, min_f1: 0.4, target_macro_f1: 0.6}
+  shrinkage_k: 5
+  user_half_life_days: 730
+  user_explicit_weight: 0.6     # vs implicit (liked items' profiles)
+  explicit_conf_k: 3            # s11.8: confidence of a reader's own review aspects = n / (n + k)
+  topitems: {n: 300, min_reviews: 5}   # s13.1 aspect candidate source lists (serve set)
+  snippets: {positive: 3, negative: 2, min_chars: 40, max_chars: 220}   # s11.9 evidence snippets
+  descriptors: [darkness, pace, complexity_level]
+  rating_weights: {5: 1.0, 4: 0.5, 3: 0.0, 2: -0.5, 1: -1.0}
+
+spoiler:
+  train_on_goodreads: false     # true streams goodreads_reviews_spoiler.json.gz (~1.3 GB) on Colab;
+                                # false writes a regex-only model (same pattern as D20)
+  sample_size: 200000
+  holdout_fraction: 0.1
+  C_grid: [0.1, 1.0, 10.0]
+  target_recall: 0.9
+  regex_boost: 0.15
+  late_position_boost: 0.05     # sentences in last late_fraction of a review
+  late_fraction: 0.3
+  regex_patterns: [\bdies\b, \bdied\b, \bkilled\b, turns out, in the end, the ending,
+                   twist (is|was), revealed to be, is actually, \bmarries\b, it was all,
+                   the killer, the murderer, ends up]
+
+ranking:
+  candidates_total: 200
+  quotas:                       # by interaction bucket; sums exceed 200 on purpose (dedupe)
+    cold:     {cf: 0,  semantic: 110, item_item: 40, popularity: 50, author: 0,  aspect: 20, longtail: 20}
+    warming:  {cf: 40, semantic: 80,  item_item: 40, popularity: 35, author: 10, aspect: 20, longtail: 20}
+    blending: {cf: 70, semantic: 60,  item_item: 40, popularity: 25, author: 15, aspect: 25, longtail: 20}
+    warm:     {cf: 90, semantic: 55,  item_item: 40, popularity: 25, author: 15, aspect: 25, longtail: 20}
+  buckets: {cold: [0, 0], warming: [1, 4], blending: [5, 19], warm: [20, 1000000]}
+  min_reviews_main_feed: 3
+  negatives_per_positive: 30
+  ranker_user_split: 0.8
+  eval_folds: 5                 # D67: ranking.eval_val scores each user with a ranker fit on the other folds
+  exact_cf_share: 0.5           # D66: share of training users passed as corpus readers (exact
+                                # LightGCN vector); the rest get the pseudo-CF vector of a new reader
+  lgbm: {objective: lambdarank, n_estimators: 500, learning_rate: 0.05, num_leaves: 31,
+         min_child_samples: 20, colsample_bytree: 0.8, subsample: 0.8, subsample_freq: 1,
+         early_stopping_rounds: 50, eval_at: [10]}
+  blend: {alpha_k: 8, w_pop: 0.1, w_aspect: 0.15}
+  postprocess: {mmr_lambda: 0.75, mmr_pool: 50, genre_cap: 4, explore_slot: 8}
+  overrides: {pinned_aspect_boost: 0.1}
+
+serving:
+  bundle_dir: artifacts/serve_bundle
+  max_rss_mb: 350
+  onnx_quantized: false         # D62: int8 missed the s10.3 parity on real review sentences; ship fp32
+  onnx_threads: 1
+  verify_hashes_on_load: false
+
+llm:
+  enabled: true
+  provider: gemini              # gemini | openai_compat | fake
+  model: gemini-3.5-flash-lite  # Flash-Lite, online roles (listed via the API on 2026-10-19, D72)
+  model_quality: gemini-3.5-flash-lite  # offline synthesis; Flash failed the smoke test (D72)
+  api_key_env: GEMINI_API_KEY
+  temperature: {explain: 0.3, chat: 0.5, parse: 0.0, synthesis: 0.3}
+  max_output_tokens: {explain: 120, chat: 400, parse: 400, synthesis: 200}
+  timeout_s: 10                 # the API refuses deadlines under 10 s (D72); the brief said 8
+  max_retries: 2
+  rpm_limit: 12                 # stay under the free-tier limit
+  daily_request_budget: 1200
+  cache_path: .cache/llm.sqlite
+  cache_ttl_hours: 168
+  explain_max_words: 60
+  chat_max_words: 120
+
+genai:
+  synthesis:                    # s14.8 offline review summaries (stage genai.synthesis, D70)
+    top_n: 1000                 # books by review count at the serve cutoff
+    praised: {pos_rate: 0.6, mention_rate: 0.1}
+    criticised: {neg_rate: 0.25, mention_rate: 0.1}
+    snippets: {positive: 3, negative: 2}
+    max_words: 70
+    timeout_s: 40               # offline: the first Colab run saw 504s at the online 10 s deadline
+    rpm_limit: 7                # free tier allows 15 per minute; the bucket bursts up to 2x (D72)
+
+eval:
+  ks: [5, 10, 20, 50]
+  primary: ndcg@10
+  bootstrap_resamples: 1000
+  cold_user_sim: {n_users: 500, min_relevant: 8, onboarding_picks: 3}

@@ -1,0 +1,8 @@
+# HTTP model service (service/, decisions D80). Installed on top of requirements-core.txt:
+#   pip install -r requirements-core.txt -r requirements-service.txt
+# Resolved together with pydantic==2.13.5 from requirements-core.txt (2026-10-20).
+fastapi==0.152.0
+starlette==1.9.0
+uvicorn==0.54.0
+pydantic-settings==2.16.1
+prometheus-client==0.26.0

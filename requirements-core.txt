@@ -1,0 +1,13 @@
+# Serving dependencies for litsense_core (CLAUDE.md s4.4). Exact pins; anything new needs user approval.
+# Must install on Python 3.11 (backend) and 3.12 (Colab): numpy 2.5+ dropped 3.11.
+numpy==2.4.6
+faiss-cpu==1.15.1
+lightgbm==4.7.0
+onnxruntime==1.30.0
+tokenizers==0.23.2
+rapidfuzz==3.14.6
+pydantic==2.13.5
+PyYAML==6.0.3
+httpx==0.28.1
+google-genai==2.25.0
+vaderSentiment==3.3.2

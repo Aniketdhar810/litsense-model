@@ -1,0 +1,3444 @@
+{
+  "components": {
+    "schemas": {
+      "AspectBar": {
+        "properties": {
+          "aspect": {
+            "title": "Aspect",
+            "type": "string"
+          },
+          "label": {
+            "title": "Label",
+            "type": "string"
+          },
+          "mention_rate": {
+            "title": "Mention Rate",
+            "type": "number"
+          },
+          "neg_rate": {
+            "title": "Neg Rate",
+            "type": "number"
+          },
+          "pos_rate": {
+            "title": "Pos Rate",
+            "type": "number"
+          }
+        },
+        "required": [
+          "aspect",
+          "label",
+          "pos_rate",
+          "neg_rate",
+          "mention_rate"
+        ],
+        "title": "AspectBar",
+        "type": "object"
+      },
+      "BecauseYouLiked": {
+        "description": "One \"Because you liked {title}\" rail.",
+        "properties": {
+          "anchor_book_id": {
+            "minimum": 0.0,
+            "title": "Anchor Book Id",
+            "type": "integer"
+          },
+          "items": {
+            "items": {
+              "$ref": "#/components/schemas/RecItem"
+            },
+            "title": "Items",
+            "type": "array"
+          }
+        },
+        "required": [
+          "anchor_book_id",
+          "items"
+        ],
+        "title": "BecauseYouLiked",
+        "type": "object"
+      },
+      "BookInsights": {
+        "properties": {
+          "aspect_bars": {
+            "items": {
+              "$ref": "#/components/schemas/AspectBar"
+            },
+            "title": "Aspect Bars",
+            "type": "array"
+          },
+          "book_id": {
+            "minimum": 0.0,
+            "title": "Book Id",
+            "type": "integer"
+          },
+          "n_reviews": {
+            "title": "N Reviews",
+            "type": "integer"
+          },
+          "review_summary": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Review Summary"
+          },
+          "snippets": {
+            "items": {
+              "$ref": "#/components/schemas/Snippet"
+            },
+            "title": "Snippets",
+            "type": "array"
+          }
+        },
+        "required": [
+          "book_id",
+          "aspect_bars",
+          "review_summary",
+          "snippets",
+          "n_reviews"
+        ],
+        "title": "BookInsights",
+        "type": "object"
+      },
+      "BookListRequest": {
+        "additionalProperties": false,
+        "examples": [
+          {
+            "book_id": 12,
+            "k": 10
+          },
+          {
+            "book_id": 12,
+            "k": 5,
+            "state": {
+              "dismissed": [
+                3
+              ],
+              "profile_version": 3,
+              "ratings": [
+                {
+                  "book_id": 12,
+                  "stars": 5,
+                  "ts": 1760000000000
+                },
+                {
+                  "book_id": 40,
+                  "stars": 4,
+                  "ts": 1760100000000
+                }
+              ],
+              "reading_list": [
+                {
+                  "book_id": 7,
+                  "status": "want_to_read",
+                  "ts": 1760200000000
+                }
+              ],
+              "viewed": [
+                12
+              ]
+            }
+          }
+        ],
+        "properties": {
+          "book_id": {
+            "minimum": 0.0,
+            "title": "Book Id",
+            "type": "integer"
+          },
+          "k": {
+            "default": 10,
+            "maximum": 100.0,
+            "minimum": 1.0,
+            "title": "K",
+            "type": "integer"
+          },
+          "state": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/UserState"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "book_id"
+        ],
+        "title": "BookListRequest",
+        "type": "object"
+      },
+      "CatalogBook": {
+        "description": "PROPOSED (not in CLAUDE.md s15): catalogue row the backend seeds its books table from.",
+        "properties": {
+          "author": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Author"
+          },
+          "book_id": {
+            "minimum": 0.0,
+            "title": "Book Id",
+            "type": "integer"
+          },
+          "canonical_id": {
+            "title": "Canonical Id",
+            "type": "string"
+          },
+          "description": {
+            "title": "Description",
+            "type": "string"
+          },
+          "genres": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Genres",
+            "type": "array"
+          },
+          "image": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Image"
+          },
+          "isbn13": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Isbn13"
+          },
+          "pages": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Pages"
+          },
+          "primary_genre": {
+            "title": "Primary Genre",
+            "type": "string"
+          },
+          "series_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Series Id"
+          },
+          "series_name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Series Name"
+          },
+          "series_pos": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Series Pos"
+          },
+          "title": {
+            "title": "Title",
+            "type": "string"
+          },
+          "year": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Year"
+          }
+        },
+        "required": [
+          "book_id",
+          "canonical_id",
+          "title",
+          "author",
+          "genres",
+          "primary_genre",
+          "year",
+          "pages",
+          "description",
+          "image",
+          "isbn13"
+        ],
+        "title": "CatalogBook",
+        "type": "object"
+      },
+      "CatalogPage": {
+        "description": "One page of the catalogue. ``bundle_version`` changes when a new bundle ships, which is\nthe backend's signal to reseed.",
+        "properties": {
+          "bundle_version": {
+            "title": "Bundle Version",
+            "type": "string"
+          },
+          "items": {
+            "items": {
+              "$ref": "#/components/schemas/CatalogBook"
+            },
+            "title": "Items",
+            "type": "array"
+          },
+          "limit": {
+            "title": "Limit",
+            "type": "integer"
+          },
+          "offset": {
+            "title": "Offset",
+            "type": "integer"
+          },
+          "total": {
+            "title": "Total",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "bundle_version",
+          "total",
+          "offset",
+          "limit",
+          "items"
+        ],
+        "title": "CatalogPage",
+        "type": "object"
+      },
+      "ChatItem": {
+        "properties": {
+          "book_id": {
+            "minimum": 0.0,
+            "title": "Book Id",
+            "type": "integer"
+          },
+          "evidence": {
+            "$ref": "#/components/schemas/Evidence"
+          },
+          "reason": {
+            "title": "Reason",
+            "type": "string"
+          }
+        },
+        "required": [
+          "book_id",
+          "reason",
+          "evidence"
+        ],
+        "title": "ChatItem",
+        "type": "object"
+      },
+      "ChatMessage": {
+        "properties": {
+          "role": {
+            "enum": [
+              "user",
+              "assistant"
+            ],
+            "title": "Role",
+            "type": "string"
+          },
+          "text": {
+            "title": "Text",
+            "type": "string"
+          }
+        },
+        "required": [
+          "role",
+          "text"
+        ],
+        "title": "ChatMessage",
+        "type": "object"
+      },
+      "ChatReply": {
+        "properties": {
+          "chips": {
+            "items": {
+              "$ref": "#/components/schemas/Chip"
+            },
+            "title": "Chips",
+            "type": "array"
+          },
+          "clarification": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Clarification"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "followup": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Followup"
+          },
+          "intent": {
+            "enum": [
+              "recommend_general",
+              "similar_to",
+              "similar_to_with_modifier",
+              "more_by_author",
+              "refine_previous",
+              "explain_recommendation",
+              "filter_by_attribute",
+              "mixed_opinion",
+              "out_of_scope"
+            ],
+            "title": "Intent",
+            "type": "string"
+          },
+          "intro": {
+            "title": "Intro",
+            "type": "string"
+          },
+          "items": {
+            "items": {
+              "$ref": "#/components/schemas/ChatItem"
+            },
+            "title": "Items",
+            "type": "array"
+          },
+          "method": {
+            "enum": [
+              "template",
+              "llm"
+            ],
+            "title": "Method",
+            "type": "string"
+          },
+          "session": {
+            "$ref": "#/components/schemas/SessionState"
+          }
+        },
+        "required": [
+          "intro",
+          "session",
+          "method",
+          "intent"
+        ],
+        "title": "ChatReply",
+        "type": "object"
+      },
+      "ChatRequest": {
+        "additionalProperties": false,
+        "examples": [
+          {
+            "message": "something like Circe but shorter",
+            "state": {
+              "dismissed": [
+                3
+              ],
+              "profile_version": 3,
+              "ratings": [
+                {
+                  "book_id": 12,
+                  "stars": 5,
+                  "ts": 1760000000000
+                },
+                {
+                  "book_id": 40,
+                  "stars": 4,
+                  "ts": 1760100000000
+                }
+              ],
+              "reading_list": [
+                {
+                  "book_id": 7,
+                  "status": "want_to_read",
+                  "ts": 1760200000000
+                }
+              ],
+              "viewed": [
+                12
+              ]
+            }
+          },
+          {
+            "message": "why the second one?",
+            "session": {
+              "last_shown": [
+                5,
+                9
+              ],
+              "session_id": "3f2a",
+              "turn": 1
+            },
+            "state": {
+              "dismissed": [
+                3
+              ],
+              "profile_version": 3,
+              "ratings": [
+                {
+                  "book_id": 12,
+                  "stars": 5,
+                  "ts": 1760000000000
+                },
+                {
+                  "book_id": 40,
+                  "stars": 4,
+                  "ts": 1760100000000
+                }
+              ],
+              "reading_list": [
+                {
+                  "book_id": 7,
+                  "status": "want_to_read",
+                  "ts": 1760200000000
+                }
+              ],
+              "viewed": [
+                12
+              ]
+            }
+          }
+        ],
+        "properties": {
+          "message": {
+            "default": "",
+            "maxLength": 2000,
+            "title": "Message",
+            "type": "string"
+          },
+          "session": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/SessionState"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "state": {
+            "$ref": "#/components/schemas/UserState"
+          }
+        },
+        "title": "ChatRequest",
+        "type": "object"
+      },
+      "Chip": {
+        "properties": {
+          "key": {
+            "title": "Key",
+            "type": "string"
+          },
+          "label": {
+            "title": "Label",
+            "type": "string"
+          }
+        },
+        "required": [
+          "key",
+          "label"
+        ],
+        "title": "Chip",
+        "type": "object"
+      },
+      "Clarification": {
+        "properties": {
+          "options": {
+            "items": {
+              "$ref": "#/components/schemas/ClarificationOption"
+            },
+            "title": "Options",
+            "type": "array"
+          },
+          "question": {
+            "title": "Question",
+            "type": "string"
+          }
+        },
+        "required": [
+          "question",
+          "options"
+        ],
+        "title": "Clarification",
+        "type": "object"
+      },
+      "ClarificationOption": {
+        "properties": {
+          "label": {
+            "title": "Label",
+            "type": "string"
+          },
+          "value": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "integer"
+              }
+            ],
+            "title": "Value"
+          }
+        },
+        "required": [
+          "label",
+          "value"
+        ],
+        "title": "ClarificationOption",
+        "type": "object"
+      },
+      "EntitiesRequest": {
+        "additionalProperties": false,
+        "examples": [
+          {
+            "query": "brandon sanderson"
+          }
+        ],
+        "properties": {
+          "query": {
+            "maxLength": 500,
+            "title": "Query",
+            "type": "string"
+          }
+        },
+        "required": [
+          "query"
+        ],
+        "title": "EntitiesRequest",
+        "type": "object"
+      },
+      "EntityMatch": {
+        "properties": {
+          "author": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Author"
+          },
+          "book_ids": {
+            "items": {
+              "minimum": 0.0,
+              "type": "integer"
+            },
+            "title": "Book Ids",
+            "type": "array"
+          },
+          "kind": {
+            "enum": [
+              "title",
+              "author",
+              "none",
+              "ambiguous"
+            ],
+            "title": "Kind",
+            "type": "string"
+          },
+          "options": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Options",
+            "type": "array"
+          }
+        },
+        "required": [
+          "kind"
+        ],
+        "title": "EntityMatch",
+        "type": "object"
+      },
+      "ErrorBody": {
+        "properties": {
+          "code": {
+            "description": "bad_request, validation_error, unauthorized, not_found, method_not_allowed, payload_too_large, rate_limited, not_ready, overloaded or internal",
+            "title": "Code",
+            "type": "string"
+          },
+          "details": {
+            "anyOf": [
+              {
+                "items": {
+                  "additionalProperties": true,
+                  "type": "object"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Details"
+          },
+          "message": {
+            "title": "Message",
+            "type": "string"
+          },
+          "request_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Request Id"
+          }
+        },
+        "required": [
+          "code",
+          "message",
+          "request_id"
+        ],
+        "title": "ErrorBody",
+        "type": "object"
+      },
+      "ErrorEnvelope": {
+        "properties": {
+          "error": {
+            "$ref": "#/components/schemas/ErrorBody"
+          }
+        },
+        "required": [
+          "error"
+        ],
+        "title": "ErrorEnvelope",
+        "type": "object"
+      },
+      "Evidence": {
+        "description": "Facts behind a recommendation; the only input an explanation may use. Values are plain\nJSON (nested schema objects are stored via ``model_dump()``).",
+        "properties": {
+          "book": {
+            "additionalProperties": true,
+            "title": "Book",
+            "type": "object"
+          },
+          "item_evidence": {
+            "additionalProperties": true,
+            "title": "Item Evidence",
+            "type": "object"
+          },
+          "signals": {
+            "additionalProperties": true,
+            "title": "Signals",
+            "type": "object"
+          },
+          "user_evidence": {
+            "additionalProperties": true,
+            "title": "User Evidence",
+            "type": "object"
+          }
+        },
+        "required": [
+          "book",
+          "user_evidence",
+          "item_evidence",
+          "signals"
+        ],
+        "title": "Evidence",
+        "type": "object"
+      },
+      "ExplainRequest": {
+        "additionalProperties": false,
+        "examples": [
+          {
+            "book_id": 55,
+            "state": {
+              "dismissed": [
+                3
+              ],
+              "profile_version": 3,
+              "ratings": [
+                {
+                  "book_id": 12,
+                  "stars": 5,
+                  "ts": 1760000000000
+                },
+                {
+                  "book_id": 40,
+                  "stars": 4,
+                  "ts": 1760100000000
+                }
+              ],
+              "reading_list": [
+                {
+                  "book_id": 7,
+                  "status": "want_to_read",
+                  "ts": 1760200000000
+                }
+              ],
+              "viewed": [
+                12
+              ]
+            }
+          }
+        ],
+        "properties": {
+          "book_id": {
+            "minimum": 0.0,
+            "title": "Book Id",
+            "type": "integer"
+          },
+          "state": {
+            "$ref": "#/components/schemas/UserState"
+          }
+        },
+        "required": [
+          "book_id"
+        ],
+        "title": "ExplainRequest",
+        "type": "object"
+      },
+      "Explanation": {
+        "properties": {
+          "book_id": {
+            "minimum": 0.0,
+            "title": "Book Id",
+            "type": "integer"
+          },
+          "evidence": {
+            "$ref": "#/components/schemas/Evidence"
+          },
+          "method": {
+            "enum": [
+              "template",
+              "llm"
+            ],
+            "title": "Method",
+            "type": "string"
+          },
+          "rejections": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Rejections",
+            "type": "array"
+          },
+          "text": {
+            "title": "Text",
+            "type": "string"
+          }
+        },
+        "required": [
+          "book_id",
+          "text",
+          "method",
+          "evidence"
+        ],
+        "title": "Explanation",
+        "type": "object"
+      },
+      "Filters": {
+        "properties": {
+          "genres_exclude": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Genres Exclude",
+            "type": "array"
+          },
+          "genres_include": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Genres Include",
+            "type": "array"
+          },
+          "max_pages": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Max Pages"
+          },
+          "max_year": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Max Year"
+          },
+          "min_pages": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Min Pages"
+          },
+          "min_year": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Min Year"
+          }
+        },
+        "title": "Filters",
+        "type": "object"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "title": "Detail",
+            "type": "array"
+          }
+        },
+        "title": "HTTPValidationError",
+        "type": "object"
+      },
+      "HomeRails": {
+        "properties": {
+          "because_you_liked": {
+            "items": {
+              "$ref": "#/components/schemas/BecauseYouLiked"
+            },
+            "title": "Because You Liked",
+            "type": "array"
+          },
+          "continue_exploring": {
+            "items": {
+              "$ref": "#/components/schemas/RecItem"
+            },
+            "title": "Continue Exploring",
+            "type": "array"
+          },
+          "continue_series": {
+            "items": {
+              "$ref": "#/components/schemas/RecItem"
+            },
+            "title": "Continue Series",
+            "type": "array"
+          },
+          "from_reading_list": {
+            "items": {
+              "$ref": "#/components/schemas/RecItem"
+            },
+            "title": "From Reading List",
+            "type": "array"
+          },
+          "hidden_gems": {
+            "items": {
+              "$ref": "#/components/schemas/RecItem"
+            },
+            "title": "Hidden Gems",
+            "type": "array"
+          },
+          "more_by_authors": {
+            "items": {
+              "$ref": "#/components/schemas/RecItem"
+            },
+            "title": "More By Authors",
+            "type": "array"
+          },
+          "top_picks": {
+            "items": {
+              "$ref": "#/components/schemas/RecItem"
+            },
+            "title": "Top Picks",
+            "type": "array"
+          },
+          "trending": {
+            "items": {
+              "$ref": "#/components/schemas/RecItem"
+            },
+            "title": "Trending",
+            "type": "array"
+          }
+        },
+        "required": [
+          "top_picks",
+          "because_you_liked",
+          "trending"
+        ],
+        "title": "HomeRails",
+        "type": "object"
+      },
+      "ListEvent": {
+        "properties": {
+          "book_id": {
+            "minimum": 0.0,
+            "title": "Book Id",
+            "type": "integer"
+          },
+          "status": {
+            "enum": [
+              "want_to_read",
+              "currently_reading",
+              "read",
+              "dropped"
+            ],
+            "title": "Status",
+            "type": "string"
+          },
+          "ts": {
+            "maximum": 9999999999999.0,
+            "minimum": 100000000000.0,
+            "title": "Ts",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "book_id",
+          "status",
+          "ts"
+        ],
+        "title": "ListEvent",
+        "type": "object"
+      },
+      "OnboardingProfile": {
+        "properties": {
+          "descriptors": {
+            "additionalProperties": {
+              "type": "number"
+            },
+            "title": "Descriptors",
+            "type": "object"
+          },
+          "disliked_genres": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Disliked Genres",
+            "type": "array"
+          },
+          "liked_genres": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Liked Genres",
+            "type": "array"
+          },
+          "named_authors": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Named Authors",
+            "type": "array"
+          },
+          "named_titles": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Named Titles",
+            "type": "array"
+          },
+          "negative_aspects": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Negative Aspects",
+            "type": "array"
+          },
+          "positive_aspects": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Positive Aspects",
+            "type": "array"
+          },
+          "themes": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Themes",
+            "type": "array"
+          }
+        },
+        "title": "OnboardingProfile",
+        "type": "object"
+      },
+      "OnboardingRequest": {
+        "additionalProperties": false,
+        "examples": [
+          {
+            "picks": [
+              12
+            ],
+            "text": "Slow-burn fantasy with morally grey characters, nothing too dark"
+          }
+        ],
+        "properties": {
+          "picks": {
+            "items": {
+              "minimum": 0.0,
+              "type": "integer"
+            },
+            "maxItems": 200,
+            "title": "Picks",
+            "type": "array"
+          },
+          "text": {
+            "default": "",
+            "maxLength": 2000,
+            "title": "Text",
+            "type": "string"
+          }
+        },
+        "title": "OnboardingRequest",
+        "type": "object"
+      },
+      "OnboardingResult": {
+        "properties": {
+          "display_chips": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Display Chips",
+            "type": "array"
+          },
+          "method": {
+            "enum": [
+              "llm",
+              "embed_only"
+            ],
+            "title": "Method",
+            "type": "string"
+          },
+          "profile": {
+            "$ref": "#/components/schemas/OnboardingProfile"
+          },
+          "resolved_picks": {
+            "items": {
+              "minimum": 0.0,
+              "type": "integer"
+            },
+            "title": "Resolved Picks",
+            "type": "array"
+          }
+        },
+        "required": [
+          "profile",
+          "resolved_picks",
+          "display_chips",
+          "method"
+        ],
+        "title": "OnboardingResult",
+        "type": "object"
+      },
+      "Overrides": {
+        "properties": {
+          "disabled_ai": {
+            "default": false,
+            "title": "Disabled Ai",
+            "type": "boolean"
+          },
+          "muted_genres": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Muted Genres",
+            "type": "array"
+          },
+          "pinned_aspects": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Pinned Aspects",
+            "type": "array"
+          }
+        },
+        "title": "Overrides",
+        "type": "object"
+      },
+      "RatingEvent": {
+        "properties": {
+          "book_id": {
+            "minimum": 0.0,
+            "title": "Book Id",
+            "type": "integer"
+          },
+          "stars": {
+            "maximum": 5.0,
+            "minimum": 1.0,
+            "title": "Stars",
+            "type": "number"
+          },
+          "ts": {
+            "maximum": 9999999999999.0,
+            "minimum": 100000000000.0,
+            "title": "Ts",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "book_id",
+          "stars",
+          "ts"
+        ],
+        "title": "RatingEvent",
+        "type": "object"
+      },
+      "RecItem": {
+        "properties": {
+          "book_id": {
+            "minimum": 0.0,
+            "title": "Book Id",
+            "type": "integer"
+          },
+          "evidence": {
+            "$ref": "#/components/schemas/Evidence"
+          },
+          "rank": {
+            "title": "Rank",
+            "type": "integer"
+          },
+          "reason": {
+            "title": "Reason",
+            "type": "string"
+          },
+          "reason_method": {
+            "default": "template",
+            "enum": [
+              "template",
+              "llm"
+            ],
+            "title": "Reason Method",
+            "type": "string"
+          },
+          "score": {
+            "title": "Score",
+            "type": "number"
+          },
+          "sources": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Sources",
+            "type": "array"
+          }
+        },
+        "required": [
+          "book_id",
+          "rank",
+          "score",
+          "sources",
+          "reason",
+          "evidence"
+        ],
+        "title": "RecItem",
+        "type": "object"
+      },
+      "RecResponse": {
+        "properties": {
+          "bucket": {
+            "enum": [
+              "cold",
+              "warming",
+              "blending",
+              "warm"
+            ],
+            "title": "Bucket",
+            "type": "string"
+          },
+          "continue_series": {
+            "items": {
+              "$ref": "#/components/schemas/RecItem"
+            },
+            "title": "Continue Series",
+            "type": "array"
+          },
+          "degraded": {
+            "default": false,
+            "title": "Degraded",
+            "type": "boolean"
+          },
+          "items": {
+            "items": {
+              "$ref": "#/components/schemas/RecItem"
+            },
+            "title": "Items",
+            "type": "array"
+          },
+          "latency_ms": {
+            "title": "Latency Ms",
+            "type": "number"
+          },
+          "model_version": {
+            "title": "Model Version",
+            "type": "string"
+          },
+          "profile_version": {
+            "title": "Profile Version",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "items",
+          "model_version",
+          "profile_version",
+          "bucket",
+          "latency_ms"
+        ],
+        "title": "RecResponse",
+        "type": "object"
+      },
+      "RecommendRequest": {
+        "additionalProperties": false,
+        "examples": [
+          {
+            "k": 10,
+            "state": {
+              "dismissed": [
+                3
+              ],
+              "profile_version": 3,
+              "ratings": [
+                {
+                  "book_id": 12,
+                  "stars": 5,
+                  "ts": 1760000000000
+                },
+                {
+                  "book_id": 40,
+                  "stars": 4,
+                  "ts": 1760100000000
+                }
+              ],
+              "reading_list": [
+                {
+                  "book_id": 7,
+                  "status": "want_to_read",
+                  "ts": 1760200000000
+                }
+              ],
+              "viewed": [
+                12
+              ]
+            }
+          },
+          {
+            "filters": {
+              "genres_exclude": [
+                "Horror"
+              ],
+              "min_year": 2010
+            },
+            "k": 5,
+            "state": {}
+          }
+        ],
+        "properties": {
+          "exclude": {
+            "items": {
+              "minimum": 0.0,
+              "type": "integer"
+            },
+            "maxItems": 2000,
+            "title": "Exclude",
+            "type": "array"
+          },
+          "filters": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Filters"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "k": {
+            "default": 10,
+            "maximum": 100.0,
+            "minimum": 1.0,
+            "title": "K",
+            "type": "integer"
+          },
+          "state": {
+            "$ref": "#/components/schemas/UserState"
+          },
+          "use_ranker": {
+            "default": true,
+            "title": "Use Ranker",
+            "type": "boolean"
+          }
+        },
+        "title": "RecommendRequest",
+        "type": "object"
+      },
+      "ReviewAnalysis": {
+        "properties": {
+          "aspects": {
+            "additionalProperties": {
+              "type": "number"
+            },
+            "title": "Aspects",
+            "type": "object"
+          },
+          "book_id": {
+            "anyOf": [
+              {
+                "minimum": 0.0,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Book Id"
+          },
+          "spoiler_sentences": {
+            "default": 0,
+            "title": "Spoiler Sentences",
+            "type": "integer"
+          },
+          "ts": {
+            "anyOf": [
+              {
+                "maximum": 9999999999999.0,
+                "minimum": 100000000000.0,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Ts"
+          }
+        },
+        "title": "ReviewAnalysis",
+        "type": "object"
+      },
+      "ReviewRequest": {
+        "additionalProperties": false,
+        "examples": [
+          {
+            "text": "The characters were wonderful, but the middle third really dragged."
+          }
+        ],
+        "properties": {
+          "text": {
+            "maxLength": 20000,
+            "title": "Text",
+            "type": "string"
+          }
+        },
+        "required": [
+          "text"
+        ],
+        "title": "ReviewRequest",
+        "type": "object"
+      },
+      "SearchHit": {
+        "properties": {
+          "book_id": {
+            "minimum": 0.0,
+            "title": "Book Id",
+            "type": "integer"
+          },
+          "matched": {
+            "enum": [
+              "semantic",
+              "title",
+              "author"
+            ],
+            "title": "Matched",
+            "type": "string"
+          },
+          "score": {
+            "title": "Score",
+            "type": "number"
+          }
+        },
+        "required": [
+          "book_id",
+          "score",
+          "matched"
+        ],
+        "title": "SearchHit",
+        "type": "object"
+      },
+      "SearchRequest": {
+        "additionalProperties": false,
+        "examples": [
+          {
+            "k": 20,
+            "query": "cozy mystery in a small village"
+          },
+          {
+            "filters": {
+              "min_year": 2000
+            },
+            "k": 10,
+            "query": "Andy Weir"
+          }
+        ],
+        "properties": {
+          "filters": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Filters"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "k": {
+            "default": 20,
+            "maximum": 100.0,
+            "minimum": 1.0,
+            "title": "K",
+            "type": "integer"
+          },
+          "query": {
+            "maxLength": 500,
+            "title": "Query",
+            "type": "string"
+          }
+        },
+        "required": [
+          "query"
+        ],
+        "title": "SearchRequest",
+        "type": "object"
+      },
+      "SessionState": {
+        "description": "Chat session state; the backend persists it and sends it back on the next turn.",
+        "properties": {
+          "anchor_authors": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Anchor Authors",
+            "type": "array"
+          },
+          "anchor_ids": {
+            "items": {
+              "minimum": 0.0,
+              "type": "integer"
+            },
+            "title": "Anchor Ids",
+            "type": "array"
+          },
+          "aspect_deltas": {
+            "additionalProperties": {
+              "type": "number"
+            },
+            "title": "Aspect Deltas",
+            "type": "object"
+          },
+          "descriptor_deltas": {
+            "additionalProperties": {
+              "type": "number"
+            },
+            "title": "Descriptor Deltas",
+            "type": "object"
+          },
+          "excluded_ids": {
+            "items": {
+              "minimum": 0.0,
+              "type": "integer"
+            },
+            "title": "Excluded Ids",
+            "type": "array"
+          },
+          "filters": {
+            "$ref": "#/components/schemas/Filters"
+          },
+          "history": {
+            "items": {
+              "$ref": "#/components/schemas/ChatMessage"
+            },
+            "title": "History",
+            "type": "array"
+          },
+          "last_request": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Last Request"
+          },
+          "last_shown": {
+            "items": {
+              "minimum": 0.0,
+              "type": "integer"
+            },
+            "title": "Last Shown",
+            "type": "array"
+          },
+          "session_id": {
+            "title": "Session Id",
+            "type": "string"
+          },
+          "turn": {
+            "default": 0,
+            "title": "Turn",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "session_id"
+        ],
+        "title": "SessionState",
+        "type": "object"
+      },
+      "Snippet": {
+        "properties": {
+          "aspect": {
+            "title": "Aspect",
+            "type": "string"
+          },
+          "helpful_votes": {
+            "title": "Helpful Votes",
+            "type": "integer"
+          },
+          "review_ref": {
+            "title": "Review Ref",
+            "type": "integer"
+          },
+          "text": {
+            "title": "Text",
+            "type": "string"
+          }
+        },
+        "required": [
+          "text",
+          "review_ref",
+          "helpful_votes",
+          "aspect"
+        ],
+        "title": "Snippet",
+        "type": "object"
+      },
+      "StateRequest": {
+        "additionalProperties": false,
+        "examples": [
+          {
+            "state": {
+              "dismissed": [
+                3
+              ],
+              "profile_version": 3,
+              "ratings": [
+                {
+                  "book_id": 12,
+                  "stars": 5,
+                  "ts": 1760000000000
+                },
+                {
+                  "book_id": 40,
+                  "stars": 4,
+                  "ts": 1760100000000
+                }
+              ],
+              "reading_list": [
+                {
+                  "book_id": 7,
+                  "status": "want_to_read",
+                  "ts": 1760200000000
+                }
+              ],
+              "viewed": [
+                12
+              ]
+            }
+          }
+        ],
+        "properties": {
+          "state": {
+            "$ref": "#/components/schemas/UserState"
+          }
+        },
+        "title": "StateRequest",
+        "type": "object"
+      },
+      "UserState": {
+        "description": "Everything the core knows about a reader; rebuilt by the backend for every call.",
+        "properties": {
+          "corpus_user_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Corpus User Id"
+          },
+          "dismissed": {
+            "items": {
+              "minimum": 0.0,
+              "type": "integer"
+            },
+            "title": "Dismissed",
+            "type": "array"
+          },
+          "onboarding": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/OnboardingProfile"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "onboarding_picks": {
+            "items": {
+              "minimum": 0.0,
+              "type": "integer"
+            },
+            "title": "Onboarding Picks",
+            "type": "array"
+          },
+          "onboarding_text": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Onboarding Text"
+          },
+          "overrides": {
+            "$ref": "#/components/schemas/Overrides"
+          },
+          "profile_version": {
+            "default": 0,
+            "title": "Profile Version",
+            "type": "integer"
+          },
+          "ratings": {
+            "items": {
+              "$ref": "#/components/schemas/RatingEvent"
+            },
+            "title": "Ratings",
+            "type": "array"
+          },
+          "reading_list": {
+            "items": {
+              "$ref": "#/components/schemas/ListEvent"
+            },
+            "title": "Reading List",
+            "type": "array"
+          },
+          "review_analyses": {
+            "items": {
+              "$ref": "#/components/schemas/ReviewAnalysis"
+            },
+            "title": "Review Analyses",
+            "type": "array"
+          },
+          "user_id": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "User Id"
+          },
+          "viewed": {
+            "items": {
+              "minimum": 0.0,
+              "type": "integer"
+            },
+            "title": "Viewed",
+            "type": "array"
+          }
+        },
+        "title": "UserState",
+        "type": "object"
+      },
+      "ValidationError": {
+        "properties": {
+          "ctx": {
+            "title": "Context",
+            "type": "object"
+          },
+          "input": {
+            "title": "Input"
+          },
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "title": "Location",
+            "type": "array"
+          },
+          "msg": {
+            "title": "Message",
+            "type": "string"
+          },
+          "type": {
+            "title": "Error Type",
+            "type": "string"
+          }
+        },
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError",
+        "type": "object"
+      }
+    },
+    "securitySchemes": {
+      "APIKeyHeader": {
+        "description": "The shared SERVICE_API_KEY.",
+        "in": "header",
+        "name": "X-API-Key",
+        "type": "apiKey"
+      }
+    }
+  },
+  "info": {
+    "description": "HTTP face of `litsense_core` for the LitSense Node backend. Every `/v1` route is one public\nfunction of `docs/API_CONTRACT.md` with the same request fields and response schema.\n\n* **Auth**: send `X-API-Key: <SERVICE_API_KEY>` on every `/v1` call and on `/metrics`.\n* **Request id**: send `X-Request-Id` (letters, digits, `._:-`, up to 64) to correlate logs; the\n  response echoes it, or a generated one.\n* **Rate limit**: per `X-Client-Id` when sent (a per-reader pseudonym, never an email), else per\n  client address. 429 carries `Retry-After`.\n* **Errors**: `{\"error\": {\"code\", \"message\", \"request_id\", \"details\"?}}`. 400 invalid input\n  (including an unknown `book_id`), 401, 404, 413, 429, 503 not ready or overloaded, 500.\n* **LLM routes** (`explain`, `chat-turn`, `parse-onboarding`) answer with the template path after\n  the hard timeout and then send `X-LitSense-Fallback: timeout`.\n* **Readiness**: `/ready` is 503 until the bundle is loaded; `/v1` calls get 503 `not_ready`.\n",
+    "title": "LitSense model service",
+    "version": "0.1.0"
+  },
+  "openapi": "3.1.0",
+  "paths": {
+    "/health": {
+      "get": {
+        "description": "`litsense_core.health()` (bundle version, cutoff, rss_mb, ranker, ranker_error, llm, ...)\nonce loaded, plus `ready`, boot timings and process facts. 200 while the process is alive,\nso use `/ready` for traffic decisions.",
+        "operationId": "health_health_get",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "title": "Response Health Health Get",
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Successful Response"
+          }
+        },
+        "summary": "Liveness and component status (always 200)",
+        "tags": [
+          "ops"
+        ]
+      }
+    },
+    "/metrics": {
+      "get": {
+        "operationId": "metrics_metrics_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response"
+          }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ],
+        "summary": "Prometheus metrics (text format, needs X-API-Key)",
+        "tags": [
+          "ops"
+        ]
+      }
+    },
+    "/ready": {
+      "get": {
+        "operationId": "ready_ready_get",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            },
+            "description": "Successful Response"
+          },
+          "503": {
+            "description": "Still loading, or the boot failed"
+          }
+        },
+        "summary": "Readiness: 200 once the bundle is loaded and warm, else 503",
+        "tags": [
+          "ops"
+        ]
+      }
+    },
+    "/v1/analyze-user-review": {
+      "post": {
+        "description": "`analyze_user_review(text)`: store the result and send it back in\n`UserState.review_analyses` (set `book_id` and `ts` on your side).",
+        "operationId": "analyze_user_review_v1_analyze_user_review_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ReviewRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReviewAnalysis"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Invalid input (validation or unknown book_id)"
+          },
+          "401": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Missing or wrong X-API-Key"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          },
+          "429": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Rate limited; see Retry-After"
+          },
+          "500": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Internal error; quote request_id"
+          },
+          "503": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Model still loading, or overloaded"
+          }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ],
+        "summary": "analyze_user_review",
+        "tags": [
+          "model"
+        ]
+      }
+    },
+    "/v1/book-insights/{book_id}": {
+      "get": {
+        "description": "`book_insights(book_id)`: aspect bars, review summary, spoiler-safe snippets. Cached.",
+        "operationId": "book_insights_v1_book_insights__book_id__get",
+        "parameters": [
+          {
+            "description": "Integer item index (books.model_item_idx)",
+            "in": "path",
+            "name": "book_id",
+            "required": true,
+            "schema": {
+              "description": "Integer item index (books.model_item_idx)",
+              "minimum": 0,
+              "title": "Book Id",
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BookInsights"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Invalid input (validation or unknown book_id)"
+          },
+          "401": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Missing or wrong X-API-Key"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          },
+          "429": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Rate limited; see Retry-After"
+          },
+          "500": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Internal error; quote request_id"
+          },
+          "503": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Model still loading, or overloaded"
+          }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ],
+        "summary": "book_insights",
+        "tags": [
+          "model"
+        ]
+      }
+    },
+    "/v1/catalog": {
+      "get": {
+        "description": "Every book of the loaded bundle in `book_id` order, for seeding the backend's `books`\ntable (contract section 7 item 1). Page with `offset` and `limit` until `items` is shorter\nthan `limit`; reseed when `bundle_version` changes.",
+        "operationId": "catalog_v1_catalog_get",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "offset",
+            "required": false,
+            "schema": {
+              "default": 0,
+              "minimum": 0,
+              "title": "Offset",
+              "type": "integer"
+            }
+          },
+          {
+            "in": "query",
+            "name": "limit",
+            "required": false,
+            "schema": {
+              "default": 100,
+              "maximum": 1000,
+              "minimum": 1,
+              "title": "Limit",
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CatalogPage"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Invalid input (validation or unknown book_id)"
+          },
+          "401": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Missing or wrong X-API-Key"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          },
+          "429": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Rate limited; see Retry-After"
+          },
+          "500": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Internal error; quote request_id"
+          },
+          "503": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Model still loading, or overloaded"
+          }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ],
+        "summary": "Catalogue page (seed books)",
+        "tags": [
+          "model"
+        ]
+      }
+    },
+    "/v1/catalog/{book_id}": {
+      "get": {
+        "operationId": "catalog_book_v1_catalog__book_id__get",
+        "parameters": [
+          {
+            "description": "Integer item index (books.model_item_idx)",
+            "in": "path",
+            "name": "book_id",
+            "required": true,
+            "schema": {
+              "description": "Integer item index (books.model_item_idx)",
+              "minimum": 0,
+              "title": "Book Id",
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CatalogBook"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Invalid input (validation or unknown book_id)"
+          },
+          "401": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Missing or wrong X-API-Key"
+          },
+          "404": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "No book with that id"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          },
+          "429": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Rate limited; see Retry-After"
+          },
+          "500": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Internal error; quote request_id"
+          },
+          "503": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Model still loading, or overloaded"
+          }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ],
+        "summary": "One catalogue book",
+        "tags": [
+          "model"
+        ]
+      }
+    },
+    "/v1/chat-turn": {
+      "post": {
+        "description": "`chat_turn(state, session, message)`. Persist `reply.session` and send it back next turn\n(contract section 4). LLM-backed with the hard timeout (then the rule parser and templates).",
+        "operationId": "chat_turn_v1_chat_turn_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChatRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ChatReply"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Invalid input (validation or unknown book_id)"
+          },
+          "401": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Missing or wrong X-API-Key"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          },
+          "429": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Rate limited; see Retry-After"
+          },
+          "500": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Internal error; quote request_id"
+          },
+          "503": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Model still loading, or overloaded"
+          }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ],
+        "summary": "One chat turn (chat_turn)",
+        "tags": [
+          "model"
+        ]
+      }
+    },
+    "/v1/explain": {
+      "post": {
+        "description": "`explain(state, book_id)`: LLM text when available and valid, else the template.\nLLM-backed with the hard timeout; cached for CACHE_TTL_S per (bundle, state, book).",
+        "operationId": "explain_v1_explain_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ExplainRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Explanation"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Invalid input (validation or unknown book_id)"
+          },
+          "401": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Missing or wrong X-API-Key"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          },
+          "429": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Rate limited; see Retry-After"
+          },
+          "500": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Internal error; quote request_id"
+          },
+          "503": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Model still loading, or overloaded"
+          }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ],
+        "summary": "Why this book (explain)",
+        "tags": [
+          "model"
+        ]
+      }
+    },
+    "/v1/home-rails": {
+      "post": {
+        "description": "`home_rails(state)`: top picks, because-you-liked, trending and the conditional rails.",
+        "operationId": "home_rails_v1_home_rails_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/StateRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HomeRails"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Invalid input (validation or unknown book_id)"
+          },
+          "401": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Missing or wrong X-API-Key"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          },
+          "429": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Rate limited; see Retry-After"
+          },
+          "500": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Internal error; quote request_id"
+          },
+          "503": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Model still loading, or overloaded"
+          }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ],
+        "summary": "Every home rail (home_rails)",
+        "tags": [
+          "model"
+        ]
+      }
+    },
+    "/v1/metrics-report": {
+      "get": {
+        "description": "`metrics_report()`: the admin page JSON (contract section 6). Show null as a dash.",
+        "operationId": "metrics_report_v1_metrics_report_get",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "title": "Response Metrics Report V1 Metrics Report Get",
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Invalid input (validation or unknown book_id)"
+          },
+          "401": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Missing or wrong X-API-Key"
+          },
+          "429": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Rate limited; see Retry-After"
+          },
+          "500": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Internal error; quote request_id"
+          },
+          "503": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Model still loading, or overloaded"
+          }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ],
+        "summary": "metrics_report",
+        "tags": [
+          "model"
+        ]
+      }
+    },
+    "/v1/more-by-author": {
+      "post": {
+        "description": "`more_by_author(book_id, k, state)`; series order first.",
+        "operationId": "more_by_author_v1_more_by_author_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BookListRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "$ref": "#/components/schemas/RecItem"
+                  },
+                  "title": "Response More By Author V1 More By Author Post",
+                  "type": "array"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Invalid input (validation or unknown book_id)"
+          },
+          "401": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Missing or wrong X-API-Key"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          },
+          "429": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Rate limited; see Retry-After"
+          },
+          "500": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Internal error; quote request_id"
+          },
+          "503": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Model still loading, or overloaded"
+          }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ],
+        "summary": "more_by_author",
+        "tags": [
+          "model"
+        ]
+      }
+    },
+    "/v1/onboarding-grid": {
+      "get": {
+        "description": "`onboarding_grid(n)`: popular, well-rated, genre-diverse book ids for the cover picker.",
+        "operationId": "onboarding_grid_v1_onboarding_grid_get",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "n",
+            "required": false,
+            "schema": {
+              "default": 60,
+              "maximum": 500,
+              "minimum": 1,
+              "title": "N",
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "type": "integer"
+                  },
+                  "title": "Response Onboarding Grid V1 Onboarding Grid Get",
+                  "type": "array"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Invalid input (validation or unknown book_id)"
+          },
+          "401": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Missing or wrong X-API-Key"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          },
+          "429": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Rate limited; see Retry-After"
+          },
+          "500": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Internal error; quote request_id"
+          },
+          "503": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Model still loading, or overloaded"
+          }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ],
+        "summary": "onboarding_grid",
+        "tags": [
+          "model"
+        ]
+      }
+    },
+    "/v1/parse-onboarding": {
+      "post": {
+        "description": "`parse_onboarding(text, picks)`. LLM-backed: past LLM_TIMEOUT_S the keyword parse answers\n(`method=\"embed_only\"`) and the response carries `X-LitSense-Fallback: timeout`.",
+        "operationId": "parse_onboarding_v1_parse_onboarding_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OnboardingRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OnboardingResult"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Invalid input (validation or unknown book_id)"
+          },
+          "401": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Missing or wrong X-API-Key"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          },
+          "429": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Rate limited; see Retry-After"
+          },
+          "500": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Internal error; quote request_id"
+          },
+          "503": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Model still loading, or overloaded"
+          }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ],
+        "summary": "parse_onboarding",
+        "tags": [
+          "model"
+        ]
+      }
+    },
+    "/v1/recommend": {
+      "post": {
+        "description": "`recommend(state, k, filters, exclude, use_ranker)`. Never calls the LLM; p95 budget\n80 ms on the ranker path. At most RECOMMEND_CONCURRENCY run at once.",
+        "operationId": "recommend_v1_recommend_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RecommendRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RecResponse"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Invalid input (validation or unknown book_id)"
+          },
+          "401": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Missing or wrong X-API-Key"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          },
+          "429": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Rate limited; see Retry-After"
+          },
+          "500": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Internal error; quote request_id"
+          },
+          "503": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Model still loading, or overloaded"
+          }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ],
+        "summary": "Main feed (recommend)",
+        "tags": [
+          "model"
+        ]
+      }
+    },
+    "/v1/resolve-entities": {
+      "post": {
+        "description": "`resolve_entities(query)` for author-mode search; `ambiguous` returns `options`.",
+        "operationId": "resolve_entities_v1_resolve_entities_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EntitiesRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EntityMatch"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Invalid input (validation or unknown book_id)"
+          },
+          "401": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Missing or wrong X-API-Key"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          },
+          "429": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Rate limited; see Retry-After"
+          },
+          "500": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Internal error; quote request_id"
+          },
+          "503": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Model still loading, or overloaded"
+          }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ],
+        "summary": "resolve_entities",
+        "tags": [
+          "model"
+        ]
+      }
+    },
+    "/v1/semantic-search": {
+      "post": {
+        "description": "`semantic_search(query, k, filters)`: title and author matches, then meaning.",
+        "operationId": "semantic_search_v1_semantic_search_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SearchRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "$ref": "#/components/schemas/SearchHit"
+                  },
+                  "title": "Response Semantic Search V1 Semantic Search Post",
+                  "type": "array"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Invalid input (validation or unknown book_id)"
+          },
+          "401": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Missing or wrong X-API-Key"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          },
+          "429": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Rate limited; see Retry-After"
+          },
+          "500": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Internal error; quote request_id"
+          },
+          "503": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Model still loading, or overloaded"
+          }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ],
+        "summary": "semantic_search",
+        "tags": [
+          "model"
+        ]
+      }
+    },
+    "/v1/similar-books": {
+      "post": {
+        "description": "`similar_books(book_id, k, state)`; with a state, seen books are hidden.",
+        "operationId": "similar_books_v1_similar_books_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BookListRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "$ref": "#/components/schemas/RecItem"
+                  },
+                  "title": "Response Similar Books V1 Similar Books Post",
+                  "type": "array"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Invalid input (validation or unknown book_id)"
+          },
+          "401": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Missing or wrong X-API-Key"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          },
+          "429": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Rate limited; see Retry-After"
+          },
+          "500": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Internal error; quote request_id"
+          },
+          "503": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Model still loading, or overloaded"
+          }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ],
+        "summary": "similar_books",
+        "tags": [
+          "model"
+        ]
+      }
+    }
+  },
+  "tags": [
+    {
+      "description": "The contract functions (docs/API_CONTRACT.md).",
+      "name": "model"
+    },
+    {
+      "description": "Health, readiness and metrics.",
+      "name": "ops"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "explanations": 200,
+  "llm": 198,
+  "rejected": 2,
+  "rejection_rate": 0.01,
+  "by_type": {
+    "title": {
+      "count": 1,
+      "rate": 0.005
+    },
+    "number": {
+      "count": 0,
+      "rate": 0.0
+    },
+    "spoiler": {
+      "count": 0,
+      "rate": 0.0
+    },
+    "length": {
+      "count": 0,
+      "rate": 0.0
+    },
+    "format": {
+      "count": 0,
+      "rate": 0.0
+    },
+    "quote": {
+      "count": 1,
+      "rate": 0.005
+    },
+    "empty": {
+      "count": 0,
+      "rate": 0.0
+    },
+    "privacy": {
+      "count": 0,
+      "rate": 0.0
+    }
+  },
+  "fallbacks_without_text": {}
+}

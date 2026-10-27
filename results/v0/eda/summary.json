@@ -1,0 +1,219 @@
+{
+  "dataset": {
+    "users": 10987,
+    "items": 4190,
+    "interactions": 109454,
+    "density": 0.002378,
+    "interactions_with_text": 103140
+  },
+  "attrition": [
+    {
+      "step": "5-core",
+      "users": 776370,
+      "items": 495063,
+      "interactions": 9488297
+    },
+    {
+      "step": "metadata found",
+      "users": null,
+      "items": 495063,
+      "interactions": null
+    },
+    {
+      "step": "non-narrative removed",
+      "users": null,
+      "items": 454008,
+      "interactions": 8729805
+    },
+    {
+      "step": "box sets removed",
+      "users": null,
+      "items": 451060,
+      "interactions": 8666242
+    },
+    {
+      "step": "editions merged into works",
+      "users": null,
+      "items": 381631,
+      "interactions": 8666242
+    },
+    {
+      "step": "genre slices (any edition)",
+      "users": null,
+      "items": 130960,
+      "interactions": 4499455
+    },
+    {
+      "step": "one rating per (user, work)",
+      "users": null,
+      "items": null,
+      "interactions": 4496367
+    },
+    {
+      "step": "k-core",
+      "users": null,
+      "items": null,
+      "interactions": 3384103
+    },
+    {
+      "step": "sized to target",
+      "users": 10987,
+      "items": 4190,
+      "interactions": 109454
+    }
+  ],
+  "ratings": {
+    "share_relevant_all": 0.8198,
+    "share_relevant_by_split": {
+      "test": 0.8398,
+      "train": 0.8158,
+      "val": 0.8459
+    }
+  },
+  "longtail": {
+    "interaction_share_of_top_20pct_items": 0.4986
+  },
+  "reviews": {
+    "rows": 106909,
+    "text_ok_share": 0.9647,
+    "drop_reasons": {
+      "too_short": 0.9459,
+      "shipping": 0.0417,
+      "non_english": 0.0125
+    },
+    "clean_stage_counts": {
+      "dropped_non_english": 2918,
+      "dropped_shipping": 10216,
+      "dropped_too_short": 152044,
+      "reviews": 4375610,
+      "text_ok": 4210432,
+      "truncated": 18641
+    }
+  },
+  "catalogue": {
+    "primary_genre_items": {
+      "Thriller": 2408,
+      "Fiction (general)": 734,
+      "Mystery": 307,
+      "Action & Adventure": 139,
+      "Fantasy": 89,
+      "Historical Fiction": 74,
+      "Women's Fiction": 68,
+      "Contemporary Fiction": 52,
+      "Humor & Satire": 51,
+      "War & Military": 41,
+      "Literary Fiction": 34,
+      "Horror": 33,
+      "Classics": 29,
+      "Science Fiction": 27,
+      "Criticism & Essays": 27,
+      "Biography & Memoir": 19,
+      "Drama & Plays": 17,
+      "LGBTQ+": 9,
+      "Mythology & Folklore": 8,
+      "Religious & Inspirational": 6,
+      "Short Stories": 6,
+      "Poetry": 5,
+      "Romance": 3,
+      "Children's": 2,
+      "Graphic Novels": 2
+    },
+    "members_per_work": {
+      "1": 1096,
+      "2": 837,
+      "3": 834,
+      "4": 597,
+      "5": 333,
+      "6": 206,
+      "7": 108,
+      "8": 72,
+      "9": 37,
+      "10": 24,
+      "11": 15,
+      "12": 8,
+      "13": 5,
+      "14": 1,
+      "15": 3,
+      "16": 2,
+      "17": 4,
+      "20": 2,
+      "21": 2,
+      "25": 1,
+      "26": 1,
+      "27": 1,
+      "31": 1
+    },
+    "goodreads_match_rate": 0.0,
+    "parent_asin_is_isbn10_share": 0.8299,
+    "authors_with_2plus_books": 578,
+    "items_by_authors_with_2plus_books": 0.7656
+  },
+  "splits": {
+    "train": {
+      "interactions": 93036,
+      "users": 10705,
+      "items": 3811,
+      "share_relevant": 0.8158
+    },
+    "val": {
+      "interactions": 8209,
+      "users": 3103,
+      "items": 1965,
+      "share_relevant": 0.8459,
+      "users_without_train": 0.0603,
+      "items_without_train": 0.1165
+    },
+    "test": {
+      "interactions": 8209,
+      "users": 2732,
+      "items": 2038,
+      "share_relevant": 0.8398,
+      "users_without_train": 0.09,
+      "items_without_train": 0.182
+    }
+  },
+  "slice_mix": {
+    "works_kept": {
+      "Literature & Fiction": 2203640,
+      "Mystery, Thriller & Suspense": 2080689,
+      "Science Fiction & Fantasy": 215126
+    },
+    "after_kcore": {
+      "Mystery, Thriller & Suspense": 1744989,
+      "Literature & Fiction": 1510760,
+      "Science Fiction & Fantasy": 128354
+    },
+    "after_sizing": {
+      "Mystery, Thriller & Suspense": 74354,
+      "Literature & Fiction": 33534,
+      "Science Fiction & Fantasy": 1566
+    }
+  },
+  "genre_mix_after_sizing": {
+    "Thriller": 69983,
+    "Fiction (general)": 14834,
+    "Mystery": 6226,
+    "War & Military": 2926,
+    "Historical Fiction": 2597,
+    "Action & Adventure": 2584,
+    "Fantasy": 1672,
+    "Contemporary Fiction": 1254,
+    "Women's Fiction": 1103,
+    "Humor & Satire": 1015,
+    "Horror": 911,
+    "Biography & Memoir": 788,
+    "Science Fiction": 672,
+    "Literary Fiction": 652,
+    "Criticism & Essays": 640,
+    "Classics": 609,
+    "Drama & Plays": 234,
+    "LGBTQ+": 215,
+    "Short Stories": 134,
+    "Religious & Inspirational": 129,
+    "Mythology & Folklore": 119,
+    "Poetry": 64,
+    "Romance": 41,
+    "Graphic Novels": 30,
+    "Children's": 22
+  }
+}

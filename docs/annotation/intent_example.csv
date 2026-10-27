@@ -1,0 +1,7 @@
+id,message,session_json,gold_json
+e01,something like Project Hail Mary but shorter,,"{""intent"": ""similar_to_with_modifier"", ""anchor_titles"": [""Project Hail Mary""], ""anchor_resolved"": ""Project Hail Mary"", ""relative_length"": ""shorter""}"
+e02,more by that author,"{""turn"": 1, ""anchor_titles"": [""Project Hail Mary""], ""last_shown_titles"": [""The Martian"", ""Artemis""]}","{""intent"": ""more_by_author"", ""anchor_from_session"": true, ""anchor_resolved"": ""Andy Weir""}"
+e03,why the second one?,"{""turn"": 2, ""last_shown_titles"": [""The Martian"", ""Artemis""]}","{""intent"": ""explain_recommendation"", ""target_index"": 2}"
+e04,"a bit cozier, and nothing older than 2010","{""turn"": 1, ""last_shown_titles"": [""Gone Girl""]}","{""intent"": ""refine_previous"", ""descriptor_deltas"": {""darkness"": -0.6}, ""filters"": {""min_year"": 2010}}"
+e05,something else,"{""turn"": 1, ""last_shown_titles"": [""Gone Girl""]}","{""intent"": ""refine_previous"", ""exclude_previous"": true}"
+e06,what's the weather tomorrow,,"{""intent"": ""out_of_scope""}"

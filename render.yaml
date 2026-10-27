@@ -1,0 +1,31 @@
+# Render Blueprint for the LitSense model service (service/README.md, decisions D80).
+# Free plan: 512 MB RAM, 0.1 CPU, spins down after 15 idle minutes, ephemeral disk (the bundle
+# is downloaded again on every cold start). healthCheckPath is /ready, so Render routes traffic
+# only once the bundle is loaded and warm.
+services:
+  - type: web
+    name: litsense-model
+    runtime: docker
+    plan: free
+    region: singapore
+    dockerfilePath: ./service/Dockerfile
+    dockerContext: .
+    healthCheckPath: /ready
+    autoDeployTrigger: commit
+    envVars:
+      - key: BUNDLE_URL
+        value: https://github.com/Aniketdhar810/litsense-model/releases/download/bundle-v0-20261020/serve_bundle.tar.gz
+      - key: BUNDLE_DIR
+        value: /var/litsense
+      - key: SERVICE_API_KEY
+        generateValue: true
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: LOG_LEVEL
+        value: INFO
+      - key: ONNX_THREADS
+        value: "1"
+      - key: CORE_THREADS
+        value: "2"
+      - key: RECOMMEND_CONCURRENCY
+        value: "1"

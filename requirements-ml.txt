@@ -1,0 +1,19 @@
+# Offline pipeline dependencies, installed on top of requirements-core.txt:
+#   pip install -r requirements-core.txt -r requirements-ml.txt
+# Pins for packages first used after Phase 0 are provisional; re-verify in the phase that imports them.
+pandas==2.3.3
+pyarrow==25.0.1
+torch==2.14.0
+sentence-transformers==6.1.0
+transformers==5.17.0
+scikit-learn==1.9.1
+scipy==1.17.1
+implicit==0.7.3
+spacy==3.8.16
+fasttext-predict==0.9.2.4
+matplotlib==3.11.2
+onnx==1.23.0
+tqdm==4.70.1
+requests==2.34.2
+pytest==9.1.1
+ruff==0.16.9

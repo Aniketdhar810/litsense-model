@@ -1,0 +1,93 @@
+{
+  "sentences": 552265,
+  "sentences_with_hit": 294749,
+  "share_with_hit": 0.5337,
+  "tau": {
+    "plot": 0.44999998807907104,
+    "writing_style": 0.44999998807907104,
+    "characters": 0.44999998807907104,
+    "world_building": 0.44999998807907104,
+    "pacing": 0.44999998807907104,
+    "editing_quality": 0.44999998807907104,
+    "dialogue": 0.44999998807907104,
+    "humor": 0.44999998807907104,
+    "emotional_impact": 0.44999998807907104,
+    "ending": 0.44999998807907104,
+    "complexity": 0.44999998807907104,
+    "tone_dark": 0.44999998807907104
+  },
+  "per_aspect": {
+    "plot": {
+      "hits": 150839,
+      "lexicon_hits": 80185,
+      "prototype_only_hits": 70654,
+      "share": 0.2731
+    },
+    "writing_style": {
+      "hits": 55301,
+      "lexicon_hits": 26883,
+      "prototype_only_hits": 28418,
+      "share": 0.1001
+    },
+    "characters": {
+      "hits": 78500,
+      "lexicon_hits": 51130,
+      "prototype_only_hits": 27370,
+      "share": 0.1421
+    },
+    "world_building": {
+      "hits": 18675,
+      "lexicon_hits": 11077,
+      "prototype_only_hits": 7598,
+      "share": 0.0338
+    },
+    "pacing": {
+      "hits": 37816,
+      "lexicon_hits": 8667,
+      "prototype_only_hits": 29149,
+      "share": 0.0685
+    },
+    "editing_quality": {
+      "hits": 53431,
+      "lexicon_hits": 1265,
+      "prototype_only_hits": 52166,
+      "share": 0.0967
+    },
+    "dialogue": {
+      "hits": 42255,
+      "lexicon_hits": 2504,
+      "prototype_only_hits": 39751,
+      "share": 0.0765
+    },
+    "humor": {
+      "hits": 60749,
+      "lexicon_hits": 4605,
+      "prototype_only_hits": 56144,
+      "share": 0.11
+    },
+    "emotional_impact": {
+      "hits": 103575,
+      "lexicon_hits": 4926,
+      "prototype_only_hits": 98649,
+      "share": 0.1875
+    },
+    "ending": {
+      "hits": 58485,
+      "lexicon_hits": 11113,
+      "prototype_only_hits": 47372,
+      "share": 0.1059
+    },
+    "complexity": {
+      "hits": 55576,
+      "lexicon_hits": 5630,
+      "prototype_only_hits": 49946,
+      "share": 0.1006
+    },
+    "tone_dark": {
+      "hits": 82020,
+      "lexicon_hits": 5694,
+      "prototype_only_hits": 76326,
+      "share": 0.1485
+    }
+  }
+}

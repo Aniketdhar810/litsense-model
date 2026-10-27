@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "litsense"
+version = "0.1.0"
+description = "LitSense ML and GenAI: offline pipeline (ml) and serving package (litsense_core)"
+readme = "README.md"
+requires-python = ">=3.11"
+dynamic = ["dependencies", "optional-dependencies"]
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements-core.txt"] }
+optional-dependencies.ml = { file = ["requirements-ml.txt"] }
+
+[tool.setuptools.packages.find]
+include = ["ml*", "litsense_core*", "service*"]
+
+[tool.setuptools.package-data]
+ml = ["config.yaml"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-ra --strict-markers"
+markers = ["slow: needs MiniLM, spaCy or a GPU; skipped in CI"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = ["reference", "*.md"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "SIM"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["ml", "litsense_core", "service", "tests"]

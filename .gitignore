@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+.pytest_cache/
+.ruff_cache/
+
+# Pipeline outputs: local --sample runs, bundles (published as GitHub Releases), LLM cache
+local/
+artifacts/
+.cache/
+.ci-requirements.txt
+service/.env
+.colab-requirements.txt

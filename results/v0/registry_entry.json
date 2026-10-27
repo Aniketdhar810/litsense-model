@@ -1,0 +1,36 @@
+{
+  "data_version": "v0",
+  "fingerprint": "bfda590c8440784617bfb15ef88d8b23d81272ce10937a53a84f7a1e6bc8a24c",
+  "git_sha": "5f87975",
+  "created_at": "2026-10-14T16:00:31+00:00",
+  "files": {
+    "data:books.parquet": {
+      "bytes": 24770134,
+      "rows": 4190,
+      "sha256": "e0b7d9f8166dd575c6e87aebf1a6fffa2eb7d5d5a7a96218027f282b3fecde71"
+    },
+    "data:id_map.json": {
+      "bytes": 422839,
+      "sha256": "75b280d2634e8ab2ca92e1ecfaef95e56cf0d372361a164f4d4883c917429ee0"
+    },
+    "data:interactions.parquet": {
+      "bytes": 1669559,
+      "rows": 109454,
+      "sha256": "050b707b6f043907e5ca70b824b2236df900f7618a975ef5e63b0d077b191a40"
+    },
+    "data:reviews.parquet": {
+      "bytes": 24121474,
+      "rows": 106909,
+      "sha256": "acec463b7f7504bad5c8aeb5313d382205b8eee4d4d9c7efb30f154908e75b5a"
+    },
+    "data:splits.json": {
+      "bytes": 6631,
+      "sha256": "24bc3feace6bde53d28d3e067d571afc7ff08afb78d5bdf8fda8d0723bfa8e92"
+    }
+  },
+  "sizing": {
+    "steps": 5,
+    "target": 100000,
+    "user_fraction": 0.09375
+  }
+}

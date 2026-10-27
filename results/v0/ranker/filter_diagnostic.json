@@ -1,0 +1,31 @@
+{
+  "cutoff": 1598829432559,
+  "users": 2578,
+  "val_positives": 6196,
+  "union_recall": 0.28660943817499074,
+  "positives_in_union": 1806,
+  "loss_reasons_at_current_filter": {
+    "next_in_series": 124,
+    "thin": 290,
+    "series_guard_skipped": 171,
+    "series_guard_unknown": 251,
+    "future": 42,
+    "muted": 0,
+    "kept": 928
+  },
+  "val_positives_by_text_reviews_at_t1": {
+    "0": 2600,
+    "1": 22,
+    "2": 22,
+    "3": 25,
+    "4": 90,
+    "5": 65,
+    "6": 83,
+    "7": 171,
+    "8": 105,
+    "9": 145,
+    "10+": 2868
+  },
+  "catalogue_items_with_fewer_than_current": 386,
+  "catalogue_items": 4190
+}

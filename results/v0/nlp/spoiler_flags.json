@@ -1,0 +1,9 @@
+{
+  "sentences": 552265,
+  "flagged": 12298,
+  "flagged_share": 0.0223,
+  "regex_hits": 12298,
+  "late_position": 207176,
+  "model": "regex_only",
+  "threshold": 0.15000000596046448
+}

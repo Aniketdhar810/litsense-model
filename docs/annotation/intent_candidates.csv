@@ -1,0 +1,71 @@
+id,message,keep,intent,book_named,author_named,that_one_or_author,which_one,shorter_or_longer,mood,year_from,year_to,only_genre,no_genre,something_else,shown_before,notes
+c01,recommend me a good book,yes,general,,,,,,,,,,,,,
+c02,something gripping for a long flight,yes,general,,,,,,gripping,,,,,,,
+c03,a cozy mystery for the weekend,yes,general,,,,,,cozier,,,Mystery,,,,
+c04,I want a dark literary novel,yes,general,,,,,,darker,,,Literary Fiction,,,,
+c05,any funny sci-fi?,yes,general,,,,,,funnier,,,Science Fiction,,,,
+c06,books with found family and slow burn romance,yes,general,,,,,,slow burn,,,,,,,"found family is a theme with no mood word; romance may be a subplot, so no genre filled"
+c07,a short classic I can finish in a day,yes,general,,,,,shorter,,,1980,,,,,classic = 1980 as per guide; finish in a day = shorter
+c08,recent thrillers with a twist,yes,general,,,,,,,2021,,Thriller,,,,recent = 2021; with a twist has no mood word
+c09,something like Project Hail Mary,yes,like a book,Project Hail Mary,,,,,,,,,,,,
+c10,books similar to Circe,yes,like a book,Circe,,,,,,,,,,,,
+c11,like The Martian,yes,like a book,The Martian,,,,,,,,,,,,
+c12,more books in the vein of Gone Girl,yes,like a book,Gone Girl,,,,,,,,,,,,
+c13,"I loved Dune, what next?",yes,like a book,Dune,,,,,,,,,,,,
+c14,anything close to The Thursday Murder Club,yes,like a book,The Thursday Murder Club,,,,,,,,,,,,
+c15,give me Mistborn vibes,yes,like a book,Mistborn,,,,,,,,,,,,
+c16,something like Project Hail Mary but shorter,yes,like + change,Project Hail Mary,,,,shorter,,,,,,,,
+c17,like Circe but faster paced,yes,like + change,Circe,,,,,faster,,,,,,,
+c18,similar to Gone Girl but less bleak,yes,like + change,Gone Girl,,,,,lighter,,,,,,,
+c19,like Dune but easier to read,yes,like + change,Dune,,,,,easier,,,,,,,
+c20,The Martian but funnier,yes,like + change,The Martian,,,,,funnier,,,,,,,
+c21,like Mistborn but published after 2015,yes,like + change,Mistborn,,,,,,2015,,,,,,"after 2015 written as 2015, the same way the guide writes before 1980 as 1980"
+c22,"something like Artemis, longer though",yes,like + change,Artemis,,,,longer,,,,,,,,
+c23,more by that author,yes,more by author,,,yes,,,,,,,,,The Martian; Artemis,
+c24,what else did Andy Weir write?,yes,more by author,,Andy Weir,,,,,,,,,,,
+c25,by Madeline Miller,yes,more by author,,Madeline Miller,,,,,,,,,,,
+c26,other books from the same author,yes,more by author,,,yes,,,,,,,,,Circe,
+c27,more from Brandon Sanderson,yes,more by author,,Brandon Sanderson,,,,,,,,,,,
+c28,show me the author of the first one's other books,yes,more by author,,,yes,1,,,,,,,,The Martian; Circe; Mistborn,points to the first result's author
+c29,a bit cozier,yes,refine,,,,,,cozier,,,,,,Gone Girl; The Silent Patient,
+c30,something else,yes,refine,,,,,,,,,,,yes,Gone Girl,
+c31,"not these, something darker",yes,refine,,,,,,darker,,,,,yes,The Thursday Murder Club; The House in the Cerulean Sea,
+c32,faster paced please,yes,refine,,,,,,faster,,,,,,Dune,
+c33,nothing older than 2010,yes,refine,,,,,,,2010,,,,,Dune; The Hobbit,"guide lists this exact message under refine, though c47 and c48 (also years only) are filter"
+c34,shorter ones,yes,refine,,,,,shorter,,,,,,,The Way of Kings; Dune,
+c35,more literary,yes,refine,,,,,,more literary,,,,,,The Thursday Murder Club,
+c36,less complicated,yes,refine,,,,,,easier,,,,,,Dune,
+c37,funnier,yes,refine,,,,,,funnier,,,,,,The Silent Patient,
+c38,can you make them more recent and cozier?,yes,refine,,,,,,cozier,2021,,,,,Gone Girl; The Silent Patient,recent = 2021
+c39,why the second one?,yes,why,,,,2,,,,,,,,The Martian; Artemis,
+c40,why did you suggest that?,yes,why,,,yes,,,,,,,,,Circe,that points back to the one book shown
+c41,what makes the first one a fit for me,yes,why,,,,1,,,,,,,,Circe; Piranesi,
+c42,explain number 3,yes,why,,,,3,,,,,,,,The Martian; Artemis; Project Hail Mary,
+c43,why?,yes,why,,,,,,,,,,,,Mistborn,
+c44,only fantasy,yes,filter,,,,,,,,,Fantasy,,,,
+c45,no horror please,yes,filter,,,,,,,,,,Horror,,,
+c46,under 300 pages,yes,filter,,,,,shorter,,,,,,,,"exact limit is 300 pages, no column for page count"
+c47,published before 1980,yes,filter,,,,,,,,1980,,,,,
+c48,between 2000 and 2010,yes,filter,,,,,,,2000,2010,,,,,
+c49,mystery or thriller only,yes,filter,,,,,,,,,"Mystery, Thriller",,,,two genres allowed; split if the column takes only one
+c50,nothing longer than 400 pages,yes,filter,,,,,shorter,,,,,,,,"exact limit is 400 pages, no column for page count"
+c51,I loved the characters in Circe but the pacing was slow,yes,mixed,Circe,,,,,"better characters, faster",,,,,,,
+c52,Dune had amazing world-building but I found it dense,yes,mixed,Dune,,,,,easier,,,,,,,"liked world-building, no mood word for it; disliked dense so easier"
+c53,"the humor in The Martian worked, the ending did not",yes,mixed,The Martian,,,,,more humor,,,,,,,"disliked the ending, no clear mood word for it"
+c54,Gone Girl was too dark for me but the plot was clever,yes,mixed,Gone Girl,,,,,"less dark, better plot",,,,,,,
+c55,"Project Hail Mary: great science, flat dialogue",yes,mixed,Project Hail Mary,,,,,,,,,,,,"great science has no mood word; flat dialogue could be better prose or better characters, so left empty"
+c56,"liked the prose of The Song of Achilles, not the ending",yes,mixed,The Song of Achilles,,,,,better prose,,,,,,,"disliked the ending, no clear mood word for it"
+c57,what's the weather tomorrow,yes,not about books,,,,,,,,,,,,,
+c58,write my essay for me,yes,not about books,,,,,,,,,,,,,
+c59,who won the match last night,yes,not about books,,,,,,,,,,,,,
+c60,tell me a joke,yes,not about books,,,,,,,,,,,,,
+c61,how do I reset my password,yes,not about books,,,,,,,,,,,,,
+c62,translate this to French,yes,not about books,,,,,,,,,,,,,
+c63,"I read mostly thrillers, surprise me",yes,general,,,,,,,,,,,,,"reads thrillers but says surprise me, so no genre filter filled"
+c64,a doorstopper fantasy with great world-building,yes,general,,,,,longer,,,,Fantasy,,,,doorstopper = longer; world-building has no mood word
+c65,that one again but by someone else,,like a book,,,yes,,,,,,,,,The Martian,"no book named, points back to the shown one and wants a different author; could also be read as refine, so left out of the final set"
+c66,darker and more recent,yes,refine,,,,,,darker,2021,,,,,The House in the Cerulean Sea,recent = 2021
+c67,ok but longer,yes,refine,,,,,longer,,,,,,,The Martian; Artemis,
+c68,more by the author of the third one,yes,more by author,,,yes,3,,,,,,,,Circe; The Martian; Mistborn,
+c69,exclude science fiction,yes,filter,,,,,,,,,,Science Fiction,,,
+c70,why the last one?,yes,why,,,,3,,,,,,,,The Martian; Artemis; Project Hail Mary,last one = the 3rd of the 3 shown

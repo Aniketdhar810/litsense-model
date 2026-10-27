@@ -1,0 +1,48 @@
+# Local stack (decisions D80): the model service, a static host for the bundle tar, and a stub
+# of the Node backend that calls the service the way the real one will.
+#
+#   cp service/.env.example service/.env          # then set SERVICE_API_KEY
+#   put serve_bundle.tar.gz (from Drive or the release) in ./local/
+#   docker compose -f service/docker-compose.yml up --build
+#
+# The model downloads the tar from bundle-host once and keeps it in the "bundle" volume, so later
+# restarts skip the download. Set BUNDLE_URL in service/.env to use the GitHub Release instead.
+services:
+  bundle-host:
+    image: python:3.12-slim
+    command: ["python", "-m", "http.server", "8080", "--directory", "/srv"]
+    volumes:
+      - ../local:/srv:ro
+
+  model:
+    build:
+      context: ..
+      dockerfile: service/Dockerfile
+    env_file: .env
+    environment:
+      BUNDLE_URL: ${BUNDLE_URL:-http://bundle-host:8080/serve_bundle.tar.gz}
+    volumes:
+      - bundle:/var/litsense
+    ports:
+      - "8000:8000"
+    mem_limit: 512m  # the Render free plan
+    depends_on:
+      - bundle-host
+
+  node-stub:
+    image: node:22-alpine
+    working_dir: /stub
+    command: ["node", "index.js"]
+    env_file: .env
+    environment:
+      MODEL_URL: http://model:8000
+    volumes:
+      - ./dev/node-stub:/stub:ro
+    ports:
+      - "3000:3000"
+    depends_on:
+      model:
+        condition: service_healthy
+
+volumes:
+  bundle: {}
