@@ -1,0 +1,31 @@
+# Keeps the Render free services awake during a daily window, so visitors in that window never
+# hit a cold start. Render's free plan gives 750 instance hours per workspace per month and both
+# services (litsense-model, litsense-api) draw from it: 2 services x 11 h x 31 days = 682 h,
+# leaving about 68 h for visits outside the window. A wider window will exhaust the hours, and
+# Render then suspends every free service until the next month.
+#
+# Window: 05:00-15:59 UTC = 10:30-21:29 IST, every 5 minutes (Render spins a service down after
+# 15 idle minutes; GitHub may delay scheduled runs by several minutes, hence 5 and not 10).
+# Change the hours in the cron line, keeping (hours per day x 2 x 31) under about 700.
+# GitHub disables scheduled workflows in a public repo after 60 days without commits: re-enable
+# it from the Actions tab if that happens.
+name: Keep services warm
+
+on:
+  schedule:
+    - cron: '*/5 5-15 * * *'
+  workflow_dispatch: {}  # "Run workflow" button: wake both services before a demo
+
+permissions: {}
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Ping the model service and the API
+        run: |
+          for url in https://litsense-model.onrender.com/ready https://litsense-api.onrender.com/healthz; do
+            code=$(curl -s -o /dev/null -m 120 -w '%{http_code}' "$url" || true)
+            echo "$url -> $code"
+          done
